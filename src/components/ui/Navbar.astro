@@ -1,0 +1,200 @@
+---
+import { Icon } from "astro-icon/components"
+import {navItems} from "../../config/nav-menu"
+
+const links = navItems.links;
+const drops = navItems.dropMenu;
+const dropdowns = navItems.dropMenu[0].dropdown;
+
+import { Image } from "astro:assets"
+import Logo from "../../icons/dark_logo.svg"
+
+---
+
+
+<header class="bg-white">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between lg:px-5" aria-label="Global">
+    <div class="flex lg:flex-1">
+      
+      <a href="/" class="-m-1.5 p-1.5 hidden md:flex">
+        <Icon name="dark_logo" class="dark:hidden size-36" />
+        <Icon name="light_logo_" class="hidden dark:inline-block size-36 " />
+      </a>
+
+    </div>
+
+    <div class="flex lg:hidden">
+      <button type="button" class="mt-5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700" id="mobile-menu-button">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+
+    {
+      drops.map((item) => (
+      <div class="hidden lg:flex lg:gap-x-12">
+         {
+        links.map((item) => (
+        <a href={item.href} class="text-sm font-semibold leading-6 text-gray-900">
+            {item.title}</a>
+        ))
+      }
+
+      <div class="relative">
+
+        <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false" id="product-dropdown-button">
+                {item.title}
+          <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+
+        <div id="product-dropdown" class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+          <div class="p-4">
+            {
+              dropdowns.map((item) => (
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+
+                <Icon class="text-orange-400" name={item.icon} />
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-gray-900">
+                        {item.title}
+                      </a>
+                      <p class="mt-1 text-gray-600">
+                        {item.text}
+                      </p>
+                    </div>
+              </div>
+              ))
+            }
+          </div>
+        </div>
+
+      </div>
+
+      <a href="/contacto" class="text-sm font-semibold leading-6 text-gray-900">
+        Contacto
+      </a>
+           
+    </div>
+      ))
+    }
+
+
+    <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
+              Log in 
+        <span aria-hidden="true">&rarr;</span>
+      </a>
+    </div>
+
+
+  </nav>
+
+
+
+
+  <!-- Mobile menu, show/hide based on menu open state. -->
+  <div id="mobile-menu" class="lg:hidden" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 z-10"></div>
+    <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+
+
+      <div class="flex items-center justify-between">
+        <a href="#" class="p-1.5">
+          <span class="sr-only">Sarpin Devs</span>
+          <Image alt="" src={Logo} />
+        </a>
+        <button type="button" class="rounded-md p-2.5 text-gray-700" id="close-mobile-menu-button">
+          <span class="sr-only">Close menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+
+
+      <div class="mt-6 flow-root">
+        <div class="-my-6 divide-y divide-gray-500/10">
+          {
+            drops.map((item) => (
+            <div class="space-y-2 py-6">
+               {
+                links.map((item) => (
+
+                      <a href={item.href} class="-mx-3 block rounded-lg py-2.5 pl-3 pr-3.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-50">{item.title}</a>
+           
+                ))
+              }
+              
+            <div class="-mx-3">
+              <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" id="mobile-product-button" aria-controls="mobile-product-dropdown" aria-expanded="false">
+                {item.title}
+                <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div id="mobile-product-dropdown" class="hidden">
+                {
+                  dropdowns.map((item) => (
+                    <a href={item.href} class="-mx-3 block rounded-lg py-2.5 pl-3 pr-3.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-50">{item.title}</a>
+                ))
+                }
+              </div>
+
+
+            </div>
+
+
+             
+            
+          </div>
+
+
+            ))
+          }
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</header>
+
+
+<script>
+  // Selecciona los elementos relevantes
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const closeMobileMenuButton = document.getElementById('close-mobile-menu-button');
+const productDropdownButton = document.getElementById('product-dropdown-button');
+const productDropdown = document.getElementById('product-dropdown');
+const mobileProductButton = document.getElementById('mobile-product-button');
+const mobileProductDropdown = document.getElementById('mobile-product-dropdown');
+
+// Maneja la apertura y cierre del menú móvil
+mobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.remove('hidden');
+});
+
+closeMobileMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+});
+
+// Maneja la apertura y cierre del dropdown de productos
+productDropdownButton.addEventListener('click', () => {
+  const isOpen = productDropdown.classList.contains('hidden');
+  productDropdown.classList.toggle('hidden', !isOpen);
+});
+
+mobileProductButton.addEventListener('click', () => {
+  const isOpen = mobileProductDropdown.classList.contains('hidden');
+  mobileProductDropdown.classList.toggle('hidden', !isOpen);
+});
+
+</script>

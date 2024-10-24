@@ -1,0 +1,73 @@
+---
+import {Icon} from "astro-icon/components"
+
+// Lista de Features en el Landing
+
+export const infos = [
+  {
+    title: "Potencia tus proyectos",
+    description: "Desbloquea todo el potencial de tus proyectos desde el diseño y desarrollo web hasta el marketing y la analítica, te ayudamos a crear una presencia en línea sólida y atractiva que impulse tus resultados.",
+    list: [
+      {
+        title: "Enfoque Colaborativo",
+        description: "Trabaja junto con los miembros de tu equipo en tiempo real.",
+        icon: "cloud",
+      },
+      {
+        title: "Desarrollo Innovador",
+        description: "Mantente a la vanguardia con acceso a actualizaciones constantes.",
+        icon: "lock",
+      },
+      {
+        title: "Soluciones Escalable",
+        description: "Con nuestras soluciones ofrecemos la escalabilidad necesaria para adaptars tu negocio a las necesidades del mercado.",
+        icon: "database",
+      },
+    ]
+  }
+];
+
+---
+
+
+<div class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pr-8 lg:pt-4">
+          {
+            infos.map((item) => (
+            <div class="lg:max-w-lg">
+            <h2 class="text-base font-semibold leading-7 text-black">Colabora con nosotros</h2>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">{item.title}</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">{item.description}</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+              {
+                  item.list.map((item) => (  // Ahora usas `item.list` aquí
+                    <div class="relative pl-9">
+
+                      <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center  ">
+                        <Icon class="text-orange-400" name={item.icon} />
+                      </div>
+
+                      <dt class="font-semibold text-gray-900">
+                         {item.title}
+                      </dt>
+                      
+                      <dd class="inline">
+                        {item.description}
+                      </dd>
+
+                    </div>
+                  ))
+                }
+              
+            </dl>
+          </div>
+            ))
+          }
+        </div>
+            <img src="https://images.unsplash.com/photo-1529338296731-c4280a44fc48?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product screenshot" class="mx-auto w-[24rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[24rem]" >
+      </div>
+    </div>
+  </div>
+  
