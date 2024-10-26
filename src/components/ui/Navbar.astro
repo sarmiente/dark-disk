@@ -8,11 +8,13 @@ const dropdowns = navItems.dropMenu[0].dropdown;
 
 import { Image } from "astro:assets"
 import Logo from "../../icons/dark_logo.svg"
+import DarkModeToggle from "./DarkModeToggle.astro";
+
 
 ---
 
 
-<header class="bg-white">
+<header class="dark:bg-slate-800">
   <nav class="mx-auto flex max-w-7xl items-center justify-between lg:px-5" aria-label="Global">
     <div class="flex lg:flex-1">
       
@@ -34,17 +36,17 @@ import Logo from "../../icons/dark_logo.svg"
 
     {
       drops.map((item) => (
-      <div class="hidden lg:flex lg:gap-x-12">
+      <div class="hidden lg:flex lg:gap-x-12 ">
          {
         links.map((item) => (
-        <a href={item.href} class="text-sm font-semibold leading-6 text-gray-900">
+        <a href={item.href} class="text-sm font-semibold leading-6 dark:text-white text-gray-900">
             {item.title}</a>
         ))
       }
 
       <div class="relative">
 
-        <button type="button" class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false" id="product-dropdown-button">
+        <button type="button" class="dark:text-white flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false" id="product-dropdown-button">
                 {item.title}
           <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -59,7 +61,7 @@ import Logo from "../../icons/dark_logo.svg"
 
                 <Icon class="text-orange-400" name={item.icon} />
                     <div class="flex-auto">
-                      <a href="#" class="block font-semibold text-gray-900">
+                      <a href="#" class="block font-semibold dark:text-white text-gray-900">
                         {item.title}
                       </a>
                       <p class="mt-1 text-gray-600">
@@ -74,7 +76,7 @@ import Logo from "../../icons/dark_logo.svg"
 
       </div>
 
-      <a href="/contacto" class="text-sm font-semibold leading-6 text-gray-900">
+      <a href="/contacto" class="text-sm font-semibold leading-6 dark:text-white text-gray-900">
         Contacto
       </a>
            
@@ -84,12 +86,9 @@ import Logo from "../../icons/dark_logo.svg"
 
 
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-              Log in 
-        <span aria-hidden="true">&rarr;</span>
-      </a>
+      <DarkModeToggle />
     </div>
-
+   
 
   </nav>
 
@@ -97,13 +96,13 @@ import Logo from "../../icons/dark_logo.svg"
 
 
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div id="mobile-menu" class="lg:hidden" role="dialog" aria-modal="true">
+  <div id="mobile-menu" class="hidden " role="dialog" aria-modal="true">
     <div class="fixed inset-0 z-10"></div>
     <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 
 
       <div class="flex items-center justify-between">
-        <a href="#" class="p-1.5">
+        <a href="/" class="p-1.5">
           <span class="sr-only">Sarpin Devs</span>
           <Image alt="" src={Logo} />
         </a>
@@ -144,6 +143,7 @@ import Logo from "../../icons/dark_logo.svg"
                     <a href={item.href} class="-mx-3 block rounded-lg py-2.5 pl-3 pr-3.5 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-50">{item.title}</a>
                 ))
                 }
+                
               </div>
 
 
