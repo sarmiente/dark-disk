@@ -56,7 +56,7 @@ export const featuresList = [
         <h2 class="text-base font-semibold leading-7 dark:text-white text-gray-900">
           Nuestras Soluciones</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">Explora las soluciones diseñadas especialmente para ti. </p>
-        <p class="mt-6 text-lg leading-8 text-gray-600">
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-white">
           Estamos creando un impacto positivo juntos. Reconocemos el valor de tu trabajo y te ayudamos a potenciarlo en línea con estrategias SEO efectivas.
         </p>
       </div>
@@ -67,7 +67,7 @@ export const featuresList = [
             {
               featuresList.map((item) => (
               <div class="relative pl-16">
-                <dt class="text-base font-semibold leading-7 text-gray-900">
+                <dt class="text-base font-semibold leading-7 text-orange-600">
                   {item.title}
 
                   <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-orange-400 hover:opacity-70">
@@ -75,8 +75,8 @@ export const featuresList = [
                   </div>
             
                 </dt>
-                <dd class="mt-2 text-base leading-7 text-gray-600">
-                {item.description}
+                <dd class="mt-2 text-base leading-7 text-gray-600 dark:text-white">
+                  {item.description}
                 </dd>
               </div>
               ))

@@ -37,9 +37,9 @@ export const infos = [
           {
             infos.map((item) => (
             <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-black">Colabora con nosotros</h2>
+            <h2 class="text-base font-semibold leading-7 dark:text-white text-black">Colabora con nosotros</h2>
             <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">{item.title}</p>
-            <p class="mt-6 text-lg leading-8 text-gray-600">{item.description}</p>
+            <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600">{item.description}</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
               {
                   item.list.map((item) => (  // Ahora usas `item.list` aquí
@@ -49,11 +49,11 @@ export const infos = [
                         <Icon class="text-orange-400" name={item.icon} />
                       </div>
 
-                      <dt class="font-semibold text-gray-900">
+                      <dt class="font-semibold text-gray-900 dark:text-orange-600">
                          {item.title}
                       </dt>
                       
-                      <dd class="inline">
+                      <dd class="inline dark:text-white">
                         {item.description}
                       </dd>
 
