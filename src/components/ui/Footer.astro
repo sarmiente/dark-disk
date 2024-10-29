@@ -14,7 +14,7 @@ const recursos = footerLinks[1];
 ---
 
 
-<footer class="dark:bg-slate-800 lg:grid lg:grid-cols-5 dark:text-white">
+<footer class="dark:bg-slate-800 lg:grid lg:grid-cols-5 ">
     <div class="relative block h-32 lg:col-span-2 lg:h-full">
       <img
         src={images.imgOne}
@@ -29,7 +29,7 @@ const recursos = footerLinks[1];
           <p>
             <span class="text-xs uppercase tracking-wide dark:text-white text-gray-500"> Contactanos </span>
   
-            <a href="https://api.whatsapp.com/send/?phone=573002982949" target="_blank" class="block text-2xl font-medium dark:text-white text-gray-900 hover:text-orange-400 sm:text-3xl">
+            <a href="https://api.whatsapp.com/send/?phone=573002982949" target="_blank" class="block text-2xl font-medium dark:text-white text-gray-900 hover:text-orange-400 dark:hover:text-orange-400 sm:text-3xl">
               +57 300 298 2949
             </a>
             <br>
@@ -46,7 +46,7 @@ const recursos = footerLinks[1];
            </div>
           </p>
   
-          <ul class="mt-8 space-y-1 text-sm text-gray-700">
+          <ul class="mt-8 space-y-1 text-sm text-gray-700 dark:text-white">
             <li>Cartagena de Indias</li>
             <li>Barranquilla</li>
           </ul>
@@ -57,7 +57,7 @@ const recursos = footerLinks[1];
                 href="https://www.facebook.com/sarpin.agency"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-orange-400"
+                class="text-gray-700 dark:text-white transition hover:text-orange-400 dark:hover:text-orange-400"
               >
                 <span class="sr-only">Facebook</span>
   
@@ -75,7 +75,7 @@ const recursos = footerLinks[1];
               <a href="https://www.instagram.com/sarpin.agency"
                 rel="noreferrer"
                 target="_blank"
-                class="text-gray-700 transition hover:text-orange-400"
+                class="text-gray-700  dark:text-white transition hover:text-orange-400 dark:hover:text-orange-400"
               >
                 <span class="sr-only">Instagram</span>
   
@@ -93,14 +93,14 @@ const recursos = footerLinks[1];
   
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <p class="font-medium text-gray-900">{footerLinks[1].title}</p>
+            <p class="font-medium dark:text-orange-500 text-gray-900">{footerLinks[1].title}</p>
   
             <ul class="mt-6 space-y-4 text-sm">
               {
                 recursos.items.map((item) => (
                 <li>
-                <a href={item.href} class="text-gray-700 transition hover:text-orange-400"> {item.title}</a>
-              </li>
+                  <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75"> {item.title}</a>
+                </li>
                 ))
               }
   
@@ -108,15 +108,15 @@ const recursos = footerLinks[1];
           </div>
   
           <div>
-            <p class="font-medium text-gray-900">{footerLinks[0].title}</p>
+            <p class="font-medium dark:text-orange-500 text-gray-900">{footerLinks[0].title}</p>
   
             <ul class="mt-6 space-y-4 text-sm">
              
               {
                 compania.items.map((item) => (
                 <li>
-                <a href={item.href} class="text-gray-700 transition hover:opacity-75">{item.title} </a>
-              </li>
+                  <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75">{item.title} </a>
+                </li>
                 ))
               }
               
@@ -131,16 +131,15 @@ const recursos = footerLinks[1];
         
                     {
                       legal.items.map((item) => (
-                      <li>
+                        <li>
                            <a href={item.href} class="text-orange-500 transition hover:opacity-75"> {item.title}</a>
-                           
                         </li>
                       ))
                     }
            
           </ul>
   
-          <p class="mt-8 text-xs text-gray-500 sm:mt-0">
+          <p class="mt-8 text-xs dark:text-white text-gray-500 sm:mt-0">
             Sarpin Devs © {year.getFullYear()}. Todos los derechos reservados.
           </p>
         </div>
