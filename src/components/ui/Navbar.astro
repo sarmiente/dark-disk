@@ -8,7 +8,8 @@ const dropdowns = navItems.dropMenu[0].dropdown;
 
 import { Image } from "astro:assets"
 import Logo from "../../icons/dark_logo.svg"
-import DarkModeToggle from "./DarkModeToggle.astro";
+import { ThemeToggle } from "../theme-toggle";
+
 
 
 ---
@@ -39,14 +40,14 @@ import DarkModeToggle from "./DarkModeToggle.astro";
         <div class="hidden lg:flex lg:gap-x-12 ">
          {
             links.map((item) => (
-            <a href={item.href} class="text-sm font-semibold leading-6 dark:text-white hover:text-orange-500 text-gray-900">
+            <a href={item.href} class="text-sm font-semibold leading-6 dark:text-white hover:text-orange-500 dark:hover:text-orange-500 text-gray-900">
             {item.title}</a>
         ))
       }
 
       <div class="relative">
 
-        <button type="button" class="dark:text-white hover:text-orange-500  flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false" id="product-dropdown-button">
+        <button type="button" class="dark:text-white hover:text-orange-500 dark:hover:text-orange-500 flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false" id="product-dropdown-button">
                 {item.title}
           <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
@@ -61,7 +62,7 @@ import DarkModeToggle from "./DarkModeToggle.astro";
 
                 <Icon class="text-orange-400" name={item.icon} />
                     <div class="flex-auto">
-                      <a href="#" class="block font-semibold dark:text-white  text-gray-900">
+                      <a href="#" class="block font-semibold text-gray-900">
                         {item.title}
                       </a>
                       <p class="mt-1 text-gray-600">
@@ -76,7 +77,7 @@ import DarkModeToggle from "./DarkModeToggle.astro";
 
       </div>
 
-      <a href="/contacto" class="text-sm font-semibold leading-6 dark:text-white hover:text-orange-500 text-gray-900">
+      <a href="/contacto" class="text-sm font-semibold leading-6 dark:text-white dark:hover:text-orange-500 hover:text-orange-500 text-gray-900">
         Contacto
       </a>
            
@@ -86,7 +87,7 @@ import DarkModeToggle from "./DarkModeToggle.astro";
 
 
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <DarkModeToggle />
+      <ThemeToggle client:load />
     </div>
    
 
