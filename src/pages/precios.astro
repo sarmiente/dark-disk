@@ -1,0 +1,107 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../layouts/Layout.astro";
+
+const precios = [
+    {
+        title: "Básico",
+        description: "Ideal para Páginas de Aterrizaje (Landing Pages)",
+        price: "$999.000",
+        items: [
+            "Diseño Pagina Web Personalizado",
+            "Formulario de Contacto Basico",
+            "Certificado SSL",
+            "Optimizacion SEO basica",
+            "Soporte Tecnico",
+            "Copias de Seguridad",
+        ],
+    },
+    {
+        title: "Profesional",
+        description:
+            "Ideal para Blogs, Portafolios y Boletines Informativos (Newsletters)",
+        price: "$1.499.000",
+        items: [
+            "Diseño Pagina Web Personalizado Avanzado",
+            "Animaciones y Transiciones",
+            "Formulario de Contacto Avanzado",
+            "Certificado SSL",
+            "Optimización SEO intermedia",
+            "Integración de Google Analytics",
+            "Mapeo de redes sociales",
+            "Copias de Seguridad",
+        ],
+    },
+    {
+        title: "Premium",
+        description:
+            "Ideal para Tiendas Online (eCommerce) Proyectos Corporativos",
+        price: "$3.999.000",
+        items: [
+            "Diseño Pagina Web Personalizado Completo",
+            "Animaciones avanzadas y efectos interactivos",
+            "Sistema de gestión de contenidos (CMS)",
+            "Certificado SSL",
+            "Optimización avanzada para SEO",
+            "Integración de CRM",
+            "Integración de Analytics y herramientas de marketing",
+            "Optimización de velocidad avanzada",
+            "Soporte técnico extendido",
+            "Copias de Seguridad",
+        ],
+    },
+];
+
+const { title, description } = Astro.props;
+---
+
+<Layout title="Precios" description={description}>
+    <section class="dark:bg-slate-800 py-8">
+        <div class="mx-auto p-10 text-center">
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+                {
+                    precios.map((item) => (
+                        <a
+                            href="#"
+                            class="bg-white relative block overflow-hidden rounded-lg border border-gray-100 p-4 sm:p-6 lg:p-8"
+                        >
+                            <span class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-orange-300 via-orange-500 to-orange-600" />
+
+                            <div class="sm:flex sm:justify-between sm:gap-5">
+                                <div>
+                                    <h3 class="text-2xl font-bold text-slate-800 ">
+                                        {item.title}
+                                    </h3>
+
+                                    <h4 class="text-3xl font-bold text-orange-500">
+                                        {item.price}
+                                    </h4>
+                                </div>
+                                <div class="items-center my-auto py-4">
+                                    <p class="text-pretty text-center sm:text-end text-sm text-gray-800">
+                                    {item.description}
+                                </p>
+                                </div>
+                                    
+                            </div>
+
+                           
+
+                            <ul class="grid gap-3 py-5 text-sm text-muted-foreground sm:grid-cols-2">
+                                {item.items.map((item) => (
+                                    <li class="flex items-center text-left">
+                                        <Icon
+                                            name="check"
+                                            class="mr-2 size-4 text-orange-500"
+                                        />{" "}
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </a>
+                    ))
+                }
+            </div>
+        </div>
+    </section>
+</Layout>

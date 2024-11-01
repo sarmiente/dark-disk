@@ -1,0 +1,122 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "../layouts/Layout.astro";
+
+const {title, description} = Astro.props;
+---
+
+<Layout title="Nosotros" description={description}>
+    <!--
+  Heads up! 👋
+
+  Plugins:
+    - @tailwindcss/forms
+-->
+
+<section class="bg-white dark:bg-slate-800 pb-20">
+    <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+      
+  
+      <main
+        class="flex items-center justify-center px-8 sm:px-12 lg:col-span-12 "
+      >
+        <div class="max-w-xl lg:max-w-3xl">
+               
+  
+          <h1 class="mt-6 text-2xl font-bold text-orange-500 sm:text-3xl md:text-4xl">
+            Contactanos
+          </h1>
+  
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            ¿Tienes una idea para tu sitio web o necesitas un rediseño?
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            Cuéntanos sobre tus objetivos y te ayudaremos a crear una solución que se adapte a tus necesidades.
+          </p>
+
+        
+  
+          <form action="#" class="mt-8 grid grid-cols-6 gap-6">
+            <div class="col-span-6 sm:col-span-3">
+              <label for="FirstName" class="block text-sm font-medium text-gray-700 dark:text-white">
+                Nombre
+              </label>
+  
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+  
+            <div class="col-span-6 sm:col-span-3">
+              <label for="LastName" class="block text-sm font-medium text-gray-700 dark:text-white">
+                Apellido
+              </label>
+  
+              <input
+                type="text"
+                id="LastName"
+                name="last_name"
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+  
+            <div class="col-span-6">
+              <label for="Email" class="block text-sm font-medium text-gray-700 dark:text-white">Correo </label>
+  
+              <input
+                type="email"
+                id="Email"
+                name="email"
+                class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"
+              />
+            </div>
+  
+            <div class="col-span-6">
+                <label for="Message" class="block text-sm font-medium text-gray-700 dark:text-white">Mensaje</label>
+              <textarea name="" id=""  class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm"></textarea>
+            </div>
+  
+            <div class="col-span-6">
+              <label for="MarketingAccept" class="flex gap-4">
+                <input
+                  type="checkbox"
+                  id="MarketingAccept"
+                  name="marketing_accept"
+                  class="size-5 rounded-md border-gray-200 bg-white shadow-sm"
+                />
+  
+                <span class="text-sm text-gray-700 dark:text-white">
+                    Acepto recibir información y actualizaciones de Sarpin Agency
+                </span>
+              </label>
+            </div>
+  
+            <div class="col-span-6">
+                <p class="text-sm text-gray-500 dark:text-white">
+                  Al contactarnos a través del siguiente formulario, usted acepta nuestros
+                  <a href="#" class="text-gray-700 hover:text-orange-500 dark:text-orange-500 dark:hover:text-white underline">términos y condiciones</a>
+                  y
+                  <a href="#" class="text-gray-700 hover:text-orange-500 dark:text-orange-500 dark:hover:text-white underline">política de privacidad</a>.
+                </p>
+              </div>
+              
+  
+            <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+              <button
+                class="inline-block shrink-0 rounded-md border border-orange-600 bg-orange-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-opacity-80 focus:outline-none focus:ring active:text-blue-500"
+              >
+                Enviar Mensaje
+              </button>
+  
+              
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </section>
+</Layout>

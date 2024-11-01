@@ -43,7 +43,7 @@ const SunIcon = () => (
 const MoonIcon = () => (
   <>
     <motion.svg
-      class="dark:text-white"
+      className="dark:text-white"
       width="22"
       height="22"
       viewBox="0 0 24 24"

@@ -1,9 +1,18 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	darkMode: ["class"],
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ["Inter", ...fontFamily.sans],
+				heading: ["Poppins", ...fontFamily.sans],
+			  }
+		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/forms'), require("@tailwindcss/typography")
+	],
 }
