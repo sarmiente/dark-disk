@@ -9,18 +9,18 @@ const navItems = {
     { href: '/', title: 'Inicio' },
     { href: '/nosotros', title: 'Nosotros' },
     { href: '/precios', title: 'Precios' },
+    { href: '/blog', title: 'Blog' },
   ],
   dropMenu: [
     {
       title: 'Soluciones',
       dropdown: [
-        { href: '/landing-pages', title: 'Landing Pages' },
-        { href: '/blog', title: 'Blog' },
-        { href: '/corporativa', title: 'Corporativa' },
-        { href: '/tienda-online', title: 'eCommerce' },
-        { href: '/portafolios', title: 'Portafolios' },
+        { href: '/diseno-desarrollo-web', title: 'Diseño y Desarrollo Web' },
+        { href: '/identidad-corporativa', title: 'Manual de Identidad Corporativa' },
+        { href: '/optimizacion-seo', title: 'Optimización en Motores de Búsqueda' },
       ]
     },
+    
   ]
 };
 
@@ -33,7 +33,7 @@ export const Navigation = () => {
 
   return (
     <nav
-      className="w-full h-20 flex flex-col justify-center items-center fixed bg-white dark:bg-slate-800  z-40 lg:backdrop-blur-xl"
+      className="w-full h-20 flex flex-col justify-center items-center fixed bg-white dark:bg-slate-800 shadow-md z-40 lg:backdrop-blur-xl"
       aria-label="Main navigation"
     >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
@@ -84,7 +84,7 @@ export const Navigation = () => {
           <div className="hidden lg:flex h-full pb-2">
             {links.map(({ href, title }) => (
               <a
-                className="lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 dark:text-white hover:text-orange-500 transition h-full pt-2"
+                className="lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal  lg:font-medium hover:scale-110 dark:text-white hover:text-orange-500 transition h-full pt-2"
                 href={href}
                 key={title}
               >
@@ -153,7 +153,7 @@ export const Navigation = () => {
               {links.map(({ href, title }) => (
                 <a
                   key={href}
-                  className="dark:text-white lg:text-base text-2xl leading-6 mr-4 ml-4 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                  className="dark:text-white lg:text-base text-xl leading-6 mr-4 ml-4 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
                   href={href}
                   onClick={() => setIsOpen(false)}
                 >
@@ -164,7 +164,7 @@ export const Navigation = () => {
               {/* Dropdown for Mobile */}
               <div className="w-full text-center">
                 <button
-                  className="dark:text-white lg:text-base text-2xl leading-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                  className="dark:text-white lg:text-base text-xl leading-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                 >
                   Soluciones
