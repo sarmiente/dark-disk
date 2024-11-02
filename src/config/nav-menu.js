@@ -9,9 +9,9 @@ export const navItems = {
     {
       title: 'Soluciones',
       dropdown: [
-        { href: '/diseno-desarrollo-web', title: 'Diseño y Desarrollo Web' },
-        { href: '/identidad-corporativa', title: 'Manual de Identidad Corporativa' },
-        { href: '/optimizacion-seo', title: 'Optimización en Motores de Búsqueda' },
+        { href: '/soluciones/diseno-desarrollo-web', title: 'Diseño y Desarrollo Web' },
+        { href: '/soluciones/identidad-corporativa', title: 'Manual de Identidad Corporativa' },
+        { href: '/soluciones/optimizacion-seo', title: 'Optimización en Motores de Búsqueda' },
       ]
     },
     
@@ -41,9 +41,9 @@ export const footerLinks = [
       {
         title: "Oferta",
         items: [
-          { title: "Diseño y Desarrollo Web", href: "#features" },
-          { title: "Manual de Identidad", href: "#" },
-          { title: "Optimizacion en Buscadores", href: "#" },
+          { href: '/diseno-desarrollo-web', title: 'Diseño y Desarrollo Web' },
+          { href: '/identidad-corporativa', title: 'Manual de Identidad Corporativa' },
+          { href: '/optimizacion-seo', title: 'Optimización en Motores de Búsqueda' },
         ],
       },
       {
