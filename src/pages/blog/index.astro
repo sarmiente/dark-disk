@@ -26,7 +26,7 @@ const posts = (await getCollection('blog')).sort(
                 class="w-full h-48 object-cover"
               />
               <div class="p-6">
-                <h4 class="text-2xl font-semibold text-gray-900  mb-3">
+                <h4 class="text-xl font-semibold text-gray-900  mb-3">
                   {post.data.title}
                 </h4>
                 <p class="text-sm text-gray-600  mb-4">
@@ -40,6 +40,14 @@ const posts = (await getCollection('blog')).sort(
           </li>
         ))}
       </ul>
+
+	  
+
+
+
+
+
+
     </section>
   </main>
 </Layout>

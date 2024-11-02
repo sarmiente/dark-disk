@@ -3,26 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "../theme-toggle";
 
 
-
-const navItems = {
-  links: [
-    { href: '/', title: 'Inicio' },
-    { href: '/nosotros', title: 'Nosotros' },
-    { href: '/precios', title: 'Precios' },
-    { href: '/blog', title: 'Blog' },
-  ],
-  dropMenu: [
-    {
-      title: 'Soluciones',
-      dropdown: [
-        { href: '/diseno-desarrollo-web', title: 'Diseño y Desarrollo Web' },
-        { href: '/identidad-corporativa', title: 'Manual de Identidad Corporativa' },
-        { href: '/optimizacion-seo', title: 'Optimización en Motores de Búsqueda' },
-      ]
-    },
-    
-  ]
-};
+import { navItems } from "../../config/nav-menu";
 
 const links = navItems.links;
 const dropdowns = navItems.dropMenu[0].dropdown;
@@ -46,11 +27,10 @@ export const Navigation = () => {
         >
           <a href="/" aria-label="Inicio">
             <div className="flex justify-start items-center grow basis-0">
-              <div className="mr-2">
+              <div>
                 {/* Logo para modo claro, se oculta en modo oscuro */}
                 <img
                   loading="eager"
-                  
                   className="dark:hidden"
                   src="/logos/dark_logo.svg"
                   alt="Light Logo"
@@ -65,12 +45,10 @@ export const Navigation = () => {
               </div>
             </div>
           </a>
-
-
         </motion.div>
 
 
-        <div className="grow basis-0 justify-end flex lg:hidden">
+          <div className="grow basis-0 justify-end flex lg:hidden">
             <ThemeToggle client:load />
           </div>
 

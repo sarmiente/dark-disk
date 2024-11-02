@@ -9,7 +9,11 @@ import { Icon } from "astro-icon/components";
 import { footerLinks } from "../../config/nav-menu";
 const legal = footerLinks[3];
 const compania = footerLinks[0];
-const recursos = footerLinks[1];
+
+
+import { navItems } from "../../config/nav-menu";
+
+const dropdowns = navItems.dropMenu[0].dropdown;
 
 
 ---
@@ -80,15 +84,15 @@ const recursos = footerLinks[1];
   
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <p class="font-medium dark:text-orange-500 text-gray-900">{footerLinks[1].title}</p>
+            <p class="font-medium dark:text-orange-500 text-gray-900">{navItems.dropMenu[0].title}</p>
   
             <ul class="mt-6 space-y-4 text-sm">
               {
-                recursos.items.map((item) => (
-                <li>
+               dropdowns.map((item) => (
+               <li>
                   <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75"> {item.title}</a>
                 </li>
-                ))
+               ))
               }
   
             </ul>
