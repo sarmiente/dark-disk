@@ -19,7 +19,6 @@ export const navItems = {
 };
 
 
-
 export const footerLinks = [
     {
         title: "Compañia",

@@ -1,30 +1,32 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+
 import { ThemeToggle } from "../theme-toggle";
 
 
 import { navItems } from "../../config/nav-menu";
 
+
+
 const links = navItems.links;
 const dropdowns = navItems.dropMenu[0].dropdown;
+
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
+  <>
     <nav
       className="w-full h-20 flex flex-col justify-center items-center fixed bg-white dark:bg-slate-800 shadow-md z-40 lg:backdrop-blur-xl"
-      aria-label="Main navigation"
-    >
+      aria-label="Main navigation">
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <motion.div
-        className=""
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
-        >
+          exit={{ opacity: 0 }}>
           <a href="/" aria-label="Inicio">
             <div className="flex justify-start items-center grow basis-0">
               <div>
@@ -47,9 +49,10 @@ export const Navigation = () => {
           </a>
         </motion.div>
 
-
+          {/* ThemeToogle Mobile  */}
           <div className="grow basis-0 justify-end flex lg:hidden">
             <ThemeToggle client:load />
+            
           </div>
 
 
@@ -74,11 +77,10 @@ export const Navigation = () => {
             <div
               className="relative"
               onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
-            >
-              <button className="lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 dark:text-white hover:text-orange-500 transition h-full pt-2">
-                Soluciones
-              </button>
+              onMouseLeave={() => setIsDropdownOpen(false)}>
+                <button className="lg:text-base text-2xl leading-6 mr-4 ml-4 2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 dark:text-white hover:text-orange-500 transition h-full pt-2">
+                  Soluciones
+                </button>
               {isDropdownOpen && (
                 <div className="absolute bg-white shadow-md rounded mt-2 w-48">
                   {dropdowns.map(({ href, title }) => (
@@ -100,17 +102,19 @@ export const Navigation = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
-        >
+          exit={{ opacity: 0 }}>
+
+             {/* ThemeToogle Desktop  */}
           <div className="grow basis-0 justify-end hidden lg:flex">
             <ThemeToggle client:load />
+            
           </div>
+
         </motion.div>
 
         <div
           className="lg:hidden flex flex-col px-2 py-3 rounded-md cursor-pointer"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+          onClick={() => setIsOpen(!isOpen)}>
           <div className="w-5 h-0.5 bg-black dark:bg-white mb-1"></div>
           <div className="w-5 h-0.5 bg-black dark:bg-white mb-1"></div>
           <div className="w-5 h-0.5 bg-black dark:bg-white"></div>
@@ -125,8 +129,7 @@ export const Navigation = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
-            exit={{ opacity: 0 }}
-          >
+            exit={{ opacity: 0 }}>
             <div className="flex flex-col mt-16 lg:hidden absolute top-4 left-0 bg-white dark:bg-slate-800 z-50 w-full items-center gap-10 py-15 pb-10">
               {links.map(({ href, title }) => (
                 <a
@@ -169,5 +172,6 @@ export const Navigation = () => {
         )}
       </AnimatePresence>
     </nav>
+  </>
   );
 };

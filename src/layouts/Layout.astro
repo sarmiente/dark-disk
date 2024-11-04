@@ -1,17 +1,19 @@
 ---
+import LanguagePicker from "../components/LanguagePicker.astro";
 import BaseHead from "../components/layout/BaseHead.astro";
 import Footer from "../components/ui/Footer.astro";
-
-
 import {Navigation} from "../components/ui/Navigation"
 
 const { title, description } = Astro.props;
 
 
+import { getLangFromUrl } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={lang}>
 	<head>
 		<BaseHead title={title} description={description} />
 		
@@ -19,6 +21,7 @@ const { title, description } = Astro.props;
 	</head>
 	<body class="dark:bg-slate-800">
 		<Navigation client:load />
+		<LanguagePicker />
 		
 			<slot />
 		<Footer />
