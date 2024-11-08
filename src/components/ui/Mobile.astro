@@ -1,0 +1,74 @@
+---
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
+import { Icon } from "astro-icon/components";
+
+const navItems = {
+  links: [
+    { href: localizePath("/"), text: t("nav.home") },
+    { href: localizePath("/nosotros"), text: t("nav.about") },
+    { href: localizePath("/precios"), text: t("nav.pricing") },
+    { href: localizePath("/contacto"), text: t("nav.contact") },
+  ],
+  dropmenu: [
+    {
+      title: t("nav.solutions"),
+      dropdown: [
+        { href: localizePath('/soluciones/diseno-desarrollo-web'), text: t("nav.solution.01") },
+        { href: localizePath('/soluciones/identidad-corporativa'), text: t("nav.solution.02") },
+        { href: localizePath('/soluciones/optimizacion-seo'), text: t("nav.solution.03") },
+      ]
+    },
+  ]
+};
+
+const links = navItems.links;
+
+const dropdowns = navItems.dropmenu[0].dropdown;
+---
+
+<div x-data="{ openToggle: false }">
+    <!-- Botón de menú -->
+    <div class="md:hidden" @click="openToggle = ! openToggle">
+        <button type="button" class="text-black dark:text-white focus:outline-none" aria-label="Main menu" :aria-expanded="isOpen.toString()">
+            <div class="w-5 h-0.5 bg-black dark:bg-white mb-1"></div>
+            <div class="w-5 h-0.5 bg-black dark:bg-white mb-1"></div>
+            <div class="w-5 h-0.5 bg-black dark:bg-white"></div>
+        </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div x-show="openToggle" class="flex flex-col mt-16 lg:hidden absolute top-4 left-0 bg-white dark:bg-slate-800 z-50 w-full items-center gap-10 py-15 pb-10" @click.away="isOpen = false">
+        {links.map(({ href, text}) => (
+            <a
+                class="dark:text-white lg:text-base text-xl leading-6 mr-4 ml-4 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                href={href} 
+            >
+                {text}
+            </a>
+        ))}
+
+        <!-- Dropdown para Móvil -->
+        <div x-data="{ DropdownOpen: false }" class="w-full text-center">
+            <button
+                class="items-center inline-flex dark:text-white lg:text-base text-xl leading-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
+                @click="DropdownOpen = !DropdownOpen"
+            >
+            {navItems.dropmenu[0].title}
+            <Icon name="arrow" />
+            </button>
+            <div x-show="DropdownOpen" class="flex flex-col items-center mt-2">
+                {dropdowns.map(({ href, text }) => (
+                    <a
+                    
+                        href={href}
+                        class="dark:text-white lg:text-base text-xl leading-6 py-1 hover:text-orange-500"
+                       
+                    >
+                        {text}
+                    </a>
+                ))}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,9 +1,10 @@
 ---
+import { changeLanguage } from "i18next";
 import Layout from "../layouts/Layout.astro";
 
-const {description} = Astro.props;
+changeLanguage("es");
 
-
+const { description } = Astro.props;
 ---
 
 <Layout  title="Nosotros" description={description}>

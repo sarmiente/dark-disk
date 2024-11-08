@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
 import { ThemeToggle } from "../theme-toggle";
-
-
 import { navItems } from "../../config/nav-menu";
 
 
-
 const links = navItems.links;
+console.log(links);
+  
 const dropdowns = navItems.dropMenu[0].dropdown;
 
 
+
+
 export const Navigation = () => {
+
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -28,6 +29,7 @@ export const Navigation = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}>
           <a href="/" aria-label="Inicio">
+                    {/* Logos para modo claro, se oculta en modo oscuro */}
             <div className="flex justify-start items-center grow basis-0">
               <div>
                 {/* Logo para modo claro, se oculta en modo oscuro */}

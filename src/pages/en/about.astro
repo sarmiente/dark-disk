@@ -1,12 +1,13 @@
 ---
+import { changeLanguage } from "i18next";
 import Layout from "../../layouts/Layout.astro";
 
-const {description} = Astro.props;
+changeLanguage("en");
 
-
+const { description } = Astro.props;
 ---
 
-<Layout  title="About Us" description={description}>
+<Layout  title="About us" description={description}>
     <section class="dark:bg-slate-800">
         <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:pt-40">
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -19,7 +20,7 @@ const {description} = Astro.props;
             </div>
       
             <div class="lg:py-24">
-              <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">Quienes Somos</p>
+              <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">About Us</p>
               <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600">
                 Potenciamos tu experiencia online y te ayudamos a crecer. Nuestro enfoque se centra en crear una presencia digital estratégica, personalizada y efectiva, que no solo atraiga a tu audiencia, sino que también convierta visitantes en clientes fieles. 
                   

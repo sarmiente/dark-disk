@@ -1,11 +1,13 @@
 ---
-import HeroHeader from '../components/sections/HeroHeader.astro';
-import Layout from '../layouts/Layout.astro';
+import { changeLanguage } from "i18next";
+import HeroHeader from "../components/sections/HeroHeader.astro";
+import Layout from "../layouts/Layout.astro";
 import Features from "../components/sections/Features.astro";
 import FeaturesList from "../components/sections/FeaturesList.astro";
 import CTA from "../components/sections/CTA.astro";
-import "../styles/globals.css"
+import "../styles/globals.css";
 
+changeLanguage("es");
 ---
 
 <Layout>

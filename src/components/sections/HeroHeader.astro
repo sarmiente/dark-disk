@@ -1,36 +1,33 @@
 ---
 import { Icon } from "astro-icon/components";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
-
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+import { t } from "i18next";
 
 ---
 
 <div class="dark:bg-slate-800  mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 pt-40 text-center sm:pt-64">
    
     <h1 class="mx-auto max-w-4xl font-heading text-4xl font-medium tracking-tight dark:text-white text-slate-900 sm:text-6xl">
-        {t("hero.title")}
+      {t("home.hero-title")}
         <span class="relative whitespace-nowrap text-orange-600">
            <Icon class="absolute left-0 top-2/3 h-[0.58em] w-full fill-orange-300/70" name="flecha" />
-        <span class="relative text-gradient_indigo-purple">marcas</span></span>
-        <!-- -->y productos
+        <span class="relative text-gradient_indigo-purple">      {t("home.hero-span.01")}</span></span>
+        <!-- -->{t("home.hero-span.02")}
     </h1>
     <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700 dark:text-white"
     >
-    Llevamos tu idea a la web, con diseños que capturan la esencia de tu negocio.
+    {t("home.hero-subtitle")}
     </p>
     <div class="mt-10 flex justify-center gap-x-6">
         <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-orange-500 text-white dark:hover:bg-white dark:hover:text-orange-500 hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900"
           href="/precios">
-          Explorar Soluciones
+          {t("home.hero-button.01")}
         </a>
           <a class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 dark:text-white hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300"
             color="slate"
             href="https://api.whatsapp.com/send/?phone=573002982949"
             >
             <Icon name="whatsapp" />
-              <span class="ml-3">Contactanos</span>
+              <span class="ml-3">{t("home.hero-button.02")}</span>
             </a>
     </div>
     

@@ -1,11 +1,11 @@
 ---
 import { changeLanguage } from "i18next";
 import { getCollection } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../../layouts/Layout.astro";
 
-changeLanguage("es");
+changeLanguage("en");
 
-const soluciones = (await getCollection("soluciones")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <Layout>
@@ -16,31 +16,39 @@ const soluciones = (await getCollection("soluciones")).sort((a, b) => b.data.pub
         Últimos Artículos
       </h1>
       <ul class="grid gap-8 max-w-6xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3">
-        {soluciones.map((solucion) => (
+        {posts.map((post) => (
           <li class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
-            <a href={`/soluciones/${solucion.slug}/`} class="block h-full">
+            <a href={`/blog/${post.slug}/`} class="block h-full">
               <img
                 width={720}
                 height={360}
-                src={solucion.data.heroImage}
-                alt={solucion.data.title}
+                src={post.data.heroImage}
+                alt={post.data.title}
                 class="w-full h-48 object-cover"
               />
               <div class="p-6">
                 <h4 class="text-xl font-semibold text-gray-900  mb-3">
-                  {solucion.data.title}
+                  {post.data.title}
                 </h4>
                 <p class="text-sm text-gray-600  mb-4">
-                  {solucion.data.pubDate.toLocaleDateString()}
+                  {post.data.pubDate.toLocaleDateString()}
                 </p>
                 <p class="text-gray-700  line-clamp-3">
-                  {solucion.data.description || 'Descripción del artículo...'}
+                  {post.data.description || 'Descripción del artículo...'}
                 </p>
               </div>
             </a>
           </li>
         ))}
       </ul>
+
+	  
+
+
+
+
+
+
     </section>
   </main>
 </Layout>

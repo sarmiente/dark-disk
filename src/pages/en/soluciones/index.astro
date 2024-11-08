@@ -1,9 +1,9 @@
 ---
 import { changeLanguage } from "i18next";
 import { getCollection } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
+import Layout from "../../../layouts/Layout.astro";
 
-changeLanguage("es");
+changeLanguage("en");
 
 const soluciones = (await getCollection("soluciones")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---

@@ -1,0 +1,21 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "pricing": "Pricing",
+        "contact": "Contact",
+        "solutions": "Solutions",
+        "solution.01": "Web Design and Development",
+        "solution.02": "Corporate Identity Manual Design",
+        "solution.03": "Search Engine Optimization"
+    },
+    "home": {
+      "hero-title": "We help transform",
+      "hero-span.01": "brands",
+      "hero-span.02": "and products",
+      "hero-subtitle": "We take your idea to the web, with designs that capture the essence of your business.",
+      "hero-button.01": "Explore Solutions",
+      "hero-button.02": "Contact Us"
+    }
+    
+}

@@ -1,20 +1,5 @@
 ---
-import { languages } from '../i18n/ui';
-import { getLangFromUrl, useTranslatedPath, getRouteFromUrl } from '../i18n/utils';
-
-const lang = getLangFromUrl(Astro.url);
-const translatePath = useTranslatedPath(lang);
-
-
-
-const route = getRouteFromUrl(Astro.url);
-
+import { LanguageSelector } from "astro-i18next/components";
 ---
+<LanguageSelector  showFlag={true} class="bg-white dark:text-white dark:bg-slate-800 fixed right-4 top-1/4 -translate-y-1/1 flex flex-col text-sm p-0.5 rounded-md z-10" />
 
-<ul class="fixed right-2 top-1/2  -translate-y-1/2 flex flex-col space-y-2">
-    {Object.entries(languages).map(([lang, label]) => (
-        <li>
-          <a href={translatePath(`/${route ? route : ''}`, lang)}>{label}</a>
-        </li>
-      ))}
-</ul>

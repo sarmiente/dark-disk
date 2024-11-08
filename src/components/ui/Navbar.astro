@@ -1,0 +1,97 @@
+---
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
+import  Mobile  from "../ui/Mobile.astro";
+import { ThemeToggle } from "../theme-toggle";
+import { Icon } from "astro-icon/components";
+
+const navItems = {
+  links: [
+    { href: localizePath("/"), text: t("nav.home") },
+    { href: localizePath("/nosotros"), text: t("nav.about") },
+    { href: localizePath("/precios"), text: t("nav.pricing") },
+    { href: localizePath("/contacto"), text: t("nav.contact") },
+  ],
+  dropmenu: [
+    {
+      title: t("nav.solutions"),
+      dropdown: [
+        { href: localizePath('/soluciones/diseno-desarrollo-web'), text: t("nav.solution.01") },
+        { href: localizePath('/soluciones/identidad-corporativa'), text: t("nav.solution.02") },
+        { href: localizePath('/soluciones/optimizacion-seo'), text: t("nav.solution.03") },
+      ]
+    },
+  ]
+};
+
+const links = navItems.links;
+const dropdowns = navItems.dropmenu[0].dropdown;
+---
+
+<nav class="w-full bg-white dark:bg-slate-800 fixed shadow-md p-5 z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between">
+
+      <!-- Logo - Izquierda en Desktop y Mobile -->
+      <a href="/" class="flex-shrink-0">
+        <img class="h-8 w-8" src="/favicon.svg" alt="Logo" />
+      </a>
+
+      <!-- Menú de navegación - Centro en Desktop -->
+      <div class="hidden md:flex md:flex-1 justify-center space-x-4">
+        {links.map((item) => (
+          <a
+            
+            href={item.href}
+            class="dark:text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium"
+          >
+            {item.text}
+          </a>
+        ))}
+
+        <!-- Botón de Soluciones con Dropdown -->
+        <div class="relative group">
+          <!-- Botón principal con el título del dropdown -->
+          <button
+            type="button"
+            class="dark:text-white hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium focus:outline-none inline-flex items-center transition-transform ease-out duration-150 transform hover:scale-105 hover:opacity-100 opacity-90"
+          >
+            {navItems.dropmenu[0].title}
+            <Icon name="arrow" />
+          </button>
+        
+          <!-- Menú desplegable -->
+          <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-slate-800 shadow-lg rounded-md py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:translate-y-1 transition-all duration-300 ease-in-out">
+            {dropdowns.map((item) => (
+              <a
+                href={item.href}
+                class="block px-4 py-2 dark:text-white hover:text-orange-500 text-sm font-medium"
+              >
+                {item.text}
+              </a>
+            ))}
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- ThemeToggle - Derecha en Desktop -->
+      <div class="hidden md:flex justify-end items-center">
+        <ThemeToggle client:load />
+      </div>
+
+
+      <div class="md:hidden flex items-center">
+        
+        <ThemeToggle client:load /> <!-- Centro en Mobile -->
+      </div>
+      
+      <!-- ThemeToggle y Mobile Menu en Mobile -->
+      <div class="md:hidden flex items-center">
+        
+        <Mobile /> <!-- Lado derecho en Mobile -->
+      </div>
+
+    </div>
+  </div>
+</nav>
