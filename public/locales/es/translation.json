@@ -16,6 +16,54 @@
       "hero-subtitle": "Llevamos tu idea a la web, con diseños que capturan la esencia de tu negocio.",
       "hero-button.01": "Explorar Soluciones",
       "hero-button.02": "Contactanos"
+    },
+    "footer":{
+      "policy": "Politica de privacidad",
+      "terms": "Terminos y condiciones",
+      "rights": "Todos los derechos reservados.",
+      "company" : "Compañia"
+    },
+    "infos" : {
+        "title" : "Potencia tus proyectos",
+        "subtitle" : "Colabora con nosotros",
+        "description" : "Desbloquea todo el potencial de tus proyectos desde el diseño y desarrollo web hasta el marketing y la analítica, te ayudamos a crear una presencia en línea sólida y atractiva que impulse tus resultados.",
+        "list-title.01" : "Enfoque Colaborativo",
+        "list-descr.01" : "Trabaja junto con los miembros de tu equipo en tiempo real.",
+        "list-title.02" : "Desarrollo Innovador",
+        "list-descr.02" : "Mantente a la vanguardia con acceso a actualizaciones constantes.",
+        "list-title.03" : "Soluciones Escalable",
+        "list-descr.03" : "Con nuestras soluciones ofrecemos la escalabilidad necesaria para adaptars tu negocio a las necesidades del mercado."
+    },
+    "features": {
+    "title": "Nuestras Soluciones",
+    "description": "Explora las soluciones diseñadas especialmente para ti.",
+    "impact": {
+        "description": "Estamos creando un impacto positivo juntos. Reconocemos el valor de tu trabajo y te ayudamos a potenciarlo en línea con estrategias SEO efectivas."
+    },
+    "options": {
+        "landingPage": {
+            "description": "Página de destino diseñada para captar la atención de los visitantes y convertirlos en clientes, perfecta para campañas y promociones."
+        },
+        "onlineStore": {
+            "title": "Tienda Online",
+            "description": "Plataforma de comercio electrónico que permite a los clientes comprar productos o servicios, con opciones integradas de pago."
+        },
+        "corporate": {
+            "title": "Corporativa",
+            "description": "Sitio web profesional que refleja la identidad y valores de tu empresa, ideal para comunicar misión y servicios con una presencia sólida."
+        },
+        "blog": {
+            "description": "Espacio dinámico para compartir artículos, noticias y contenido relevante, diseñado para atraer y mantener el interés de tu audiencia."
+        },
+        "portfolio": {
+            "title": "Portafolios",
+            "description": "Vitrina en línea para mostrar tu trabajo, proyectos o creatividad, destacando tus habilidades y atrayendo nuevas oportunidades."
+        },
+        "newsletters": {
+            "description": "Herramienta para crear y distribuir boletines informativos desde tu sitio web, manteniendo a tu audiencia informada y conectada."
+        }
     }
+}
+
     
 }

@@ -1,4 +1,7 @@
 ---
+import { localizePath } from "astro-i18next";
+import { t } from "i18next";
+
 const year = new Date();
 
 const images = {
@@ -6,14 +9,66 @@ const images = {
 }
 
 import { Icon } from "astro-icon/components";
-import { footerLinks } from "../../config/nav-menu";
+
+
+const navItems = {
+  links: [
+    { href: localizePath("/"), text: t("nav.home") },
+    { href: localizePath("/nosotros"), text: t("nav.about") },
+    { href: localizePath("/precios"), text: t("nav.pricing") },
+    { href: localizePath("/contacto"), text: t("nav.contact") },
+  ],
+  dropmenu: [
+    {
+      text: t("nav.solutions"),
+      dropdown: [
+        { href: localizePath('/soluciones/diseno-desarrollo-web'), text: t("nav.solution.01") },
+        { href: localizePath('/soluciones/identidad-corporativa'), text: t("nav.solution.02") },
+        { href: localizePath('/soluciones/optimizacion-seo'), text: t("nav.solution.03") },
+      ]
+    },
+  ]
+};
+const footerLinks = [
+    {
+        text: "Compañia",
+        items: [
+        { href: localizePath("/"), text: t("nav.home") },
+    { href: localizePath("/nosotros"), text: t("nav.about") },
+    { href: localizePath("/precios"), text: t("nav.pricing") },
+    { href: localizePath("/contacto"), text: t("nav.contact") },
+        ],
+      },
+      {
+        text: "Recursos",
+        items: [
+          { text: "Portafolio", href: "/portafolio" },
+          { text: "Soluciones", href: "/soluciones" },
+          { text: "Explora", href: "/blog" },
+        ],
+      },
+      {
+        text: "Oferta",
+        items: [
+          { href: '/diseno-desarrollo-web', text: 'Diseño y Desarrollo Web' },
+          { href: '/identidad-corporativa', text: 'Manual de Identidad Corporativa' },
+          { href: '/optimizacion-seo', text: 'Optimización en Motores de Búsqueda' },
+        ],
+      },
+      {
+        text: "Legal",
+        items: [
+          { text: t("footer.policy"), href: "/politica-de-privacidad" },
+          { text: t("footer.terms"), href: "/terminos-y-condiciones" },
+          { text: "Cookies", href: "/cookies" },
+        ],
+      },
+];
 const legal = footerLinks[3];
 const compania = footerLinks[0];
 
 
-import { navItems } from "../../config/nav-menu";
-
-const dropdowns = navItems.dropMenu[0].dropdown;
+const dropdowns = navItems.dropmenu[0].dropdown;
 
 
 ---
@@ -32,14 +87,14 @@ const dropdowns = navItems.dropMenu[0].dropdown;
       <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
         <div>
           <p>
-            <span class="text-xs uppercase tracking-wide dark:text-white text-gray-500"> Contactanos </span>
+            <span class="text-xs uppercase tracking-wide dark:text-white text-gray-500"> {t("home.hero-button.02")}</span>
   
             <a href="https://api.whatsapp.com/send/?phone=573002982949" target="_blank" class="block text-2xl font-medium dark:text-white text-gray-900 hover:text-orange-400 dark:hover:text-orange-400 sm:text-3xl">
               +57 300 298 2949
             </a>
             <br>
-           <div class="flex gap-2">
-            <svg class="w-6 h-6 text-gray-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+           <div class="flex gap-2 items-center">
+            <svg class="w-6 h-6 text-gray-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
               <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
             </svg>
              
@@ -84,13 +139,13 @@ const dropdowns = navItems.dropMenu[0].dropdown;
   
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <p class="font-medium dark:text-orange-500 text-gray-900">{navItems.dropMenu[0].title}</p>
+            <p class="font-medium dark:text-orange-500 text-gray-900">{t("nav.solutions")}</p>
   
             <ul class="mt-6 space-y-4 text-sm">
               {
                dropdowns.map((item) => (
                <li>
-                  <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75"> {item.title}</a>
+                  <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75"> {item.text}</a>
                 </li>
                ))
               }
@@ -99,14 +154,14 @@ const dropdowns = navItems.dropMenu[0].dropdown;
           </div>
   
           <div>
-            <p class="font-medium dark:text-orange-500 text-gray-900">{footerLinks[0].title}</p>
+            <p class="font-medium dark:text-orange-500 text-gray-900">{t("footer.company")}</p>
   
             <ul class="mt-6 space-y-4 text-sm">
              
               {
                 compania.items.map((item) => (
                 <li>
-                  <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75">{item.title} </a>
+                  <a href={item.href} class="text-gray-700 dark:text-white transition hover:opacity-75">{item.text} </a>
                 </li>
                 ))
               }
@@ -123,7 +178,7 @@ const dropdowns = navItems.dropMenu[0].dropdown;
                     {
                       legal.items.map((item) => (
                         <li>
-                           <a href={item.href} class="text-orange-500 transition hover:opacity-75"> {item.title}</a>
+                           <a href={item.href} class="text-orange-500 transition hover:opacity-75"> {item.text}</a>
                         </li>
                       ))
                     }
@@ -131,8 +186,7 @@ const dropdowns = navItems.dropMenu[0].dropdown;
           </ul>
   
           <p class="mt-8 text-xs dark:text-white text-gray-500 sm:mt-0">
-            Sarpin Devs © {year.getFullYear()}. Todos los derechos reservados.
-          </p>
+            Sarpin Devs © {year.getFullYear()}. {t("footer.rights")}
         </div>
       </div>
     </div>

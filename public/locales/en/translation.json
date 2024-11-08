@@ -16,6 +16,55 @@
       "hero-subtitle": "We take your idea to the web, with designs that capture the essence of your business.",
       "hero-button.01": "Explore Solutions",
       "hero-button.02": "Contact Us"
+    },
+    "footer": {
+      "policy": "Privacy Policy",
+      "terms": "Terms and Conditions",
+      "rights": "All rights reserved.",
+      "company" : "Company"
+    },
+    "infos": {
+    "title": "Boost Your Projects",
+    "subtitle" : "Collaborate with Us",
+    "description": "Unlock the full potential of your projects, from web design and development to marketing and analytics. We help you create a strong and appealing online presence that drives your results.",
+    "list-title.01": "Collaborative Approach",
+    "list-descr.01": "Work alongside your team members in real time.",
+    "list-title.02": "Innovative Development",
+    "list-descr.02": "Stay ahead with constant access to updates.",
+    "list-title.03": "Scalable Solutions",
+    "list-descr.03": "Our solutions offer the scalability needed to adapt your business to market demands."
+},
+"features": {
+    "title": "Our Solutions",
+    "description": "Explore solutions designed especially for you.",
+    "impact": {
+        "description": "We are creating a positive impact together. We recognize the value of your work and help you enhance it online with effective SEO strategies."
+    },
+    "options": {
+        "landingPage": {
+            "description": "A landing page designed to capture visitors' attention and convert them into customers, perfect for campaigns and promotions."
+        },
+        "onlineStore": {
+            "title": "Online Store",
+            "description": "E-commerce platform that allows customers to buy products or services with integrated payment options."
+        },
+        "corporate": {
+            "title": "Corporate",
+            "description": "Professional website reflecting your company's identity and values, ideal for communicating mission and services with a solid presence."
+        },
+        "blog": {
+            "description": "Dynamic space to share articles, news, and relevant content, designed to attract and retain your audience's interest."
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "description": "An online showcase to display your work, projects, or creativity, highlighting your skills and attracting new opportunities."
+        },
+        "newsletters": {
+            "description": "A tool to create and distribute newsletters from your website, keeping your audience informed and connected."
+        }
     }
+}
+
+
     
 }

@@ -30,7 +30,7 @@ const dropdowns = navItems.dropmenu[0].dropdown;
 <div x-data="{ openToggle: false }">
     <!-- Botón de menú -->
     <div class="md:hidden" @click="openToggle = ! openToggle">
-        <button type="button" class="text-black dark:text-white focus:outline-none" aria-label="Main menu" :aria-expanded="isOpen.toString()">
+        <button type="button" class="text-black dark:text-white focus:outline-none" aria-label="Main menu" :aria-expanded="openToggle.toString()">
             <div class="w-5 h-0.5 bg-black dark:bg-white mb-1"></div>
             <div class="w-5 h-0.5 bg-black dark:bg-white mb-1"></div>
             <div class="w-5 h-0.5 bg-black dark:bg-white"></div>
@@ -38,7 +38,7 @@ const dropdowns = navItems.dropmenu[0].dropdown;
     </div>
 
     <!-- Menú móvil -->
-    <div x-show="openToggle" class="flex flex-col mt-16 lg:hidden absolute top-4 left-0 bg-white dark:bg-slate-800 z-50 w-full items-center gap-10 py-15 pb-10" @click.away="isOpen = false">
+    <div x-show="openToggle" class="flex flex-col mt-16 lg:hidden absolute top-4 left-0 bg-white dark:bg-slate-800 z-50 w-full items-center gap-10 py-15 pb-10" @click.away="openToggle = false">
         {links.map(({ href, text}) => (
             <a
                 class="dark:text-white lg:text-base text-xl leading-6 mr-4 ml-4 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"

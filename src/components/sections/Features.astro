@@ -1,26 +1,27 @@
 ---
 import {Icon} from "astro-icon/components"
+import { t } from "i18next";
 
 // Lista de Features en el Landing
 
-export const infos = [
+const infos = [
   {
-    title: "Potencia tus proyectos",
-    description: "Desbloquea todo el potencial de tus proyectos desde el diseño y desarrollo web hasta el marketing y la analítica, te ayudamos a crear una presencia en línea sólida y atractiva que impulse tus resultados.",
+    title: t("infos.title"),
+    description: t("infos.description"),
     list: [
       {
-        title: "Enfoque Colaborativo",
-        description: "Trabaja junto con los miembros de tu equipo en tiempo real.",
+        title: t("infos.list-title.01"),
+        description: t("infos.list-descr.01"),
         icon: "cloud",
       },
       {
-        title: "Desarrollo Innovador",
-        description: "Mantente a la vanguardia con acceso a actualizaciones constantes.",
+        title: t("infos.list-title.02"),
+        description: t("infos.list-descr.02"),
         icon: "lock",
       },
       {
-        title: "Soluciones Escalable",
-        description: "Con nuestras soluciones ofrecemos la escalabilidad necesaria para adaptars tu negocio a las necesidades del mercado.",
+        title: t("infos.list-title.03"),
+        description: t("infos.list-descr.03"),
         icon: "database",
       },
     ]
@@ -37,7 +38,7 @@ export const infos = [
           {
             infos.map((item) => (
             <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 dark:text-white text-black">Colabora con nosotros</h2>
+            <h2 class="text-base font-semibold leading-7 dark:text-white text-black">{t("infos.subtitle")}</h2>
             <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">{item.title}</p>
             <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600">{item.description}</p>
             <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
