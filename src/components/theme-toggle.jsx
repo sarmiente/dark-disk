@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const SunIcon = () => (
   <>
     <motion.svg
+    className="dark:text-white"
       width="22"
       height="22"
       viewBox="0 0 24 24"
@@ -110,7 +111,7 @@ export function ThemeToggle() {
     >
       <span className="sr-only">Toggle mode</span>
       <AnimatePresence initial={false}>
-        {theme !== "dark" ? <SunIcon /> : <MoonIcon />}
+        {theme !== "dark" ? <MoonIcon /> : <SunIcon />}
       </AnimatePresence>
     </button>
   ) : (
