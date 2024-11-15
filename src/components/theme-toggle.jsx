@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const SunIcon = () => (
   <>
     <motion.svg
-    className="dark:text-white"
+    className="dark:text-yellow-400"
       width="22"
       height="22"
       viewBox="0 0 24 24"
@@ -44,7 +44,7 @@ const SunIcon = () => (
 const MoonIcon = () => (
   <>
     <motion.svg
-      className="dark:text-white"
+      className="dark:text-white text-slate-800"
       width="22"
       height="22"
       viewBox="0 0 24 24"

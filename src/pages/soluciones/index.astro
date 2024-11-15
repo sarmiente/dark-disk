@@ -14,8 +14,8 @@ const soluciones = (await getCollection("soluciones")).sort((a, b) => b.data.pub
   <main class="bg-gray-50 dark:bg-slate-800">
     <section class="pt-24 pb-16">
 		<p class="mt-2 text-3xl font-bold tracking-tight text-center text-orange-600 sm:text-4xl py-5">Soluciones</p>
-      <h1 class="text-4xl text-center font-medium tracking-tight text-gray-900 dark:text-white mb-10">
-        Nuestras ofertas de servicios
+      <h1 class="text-2xl text-center font-medium tracking-tight text-gray-900 dark:text-white mb-10">
+       Explora nuestro portafolio de servicios
       </h1>
       <ul class="grid gap-8 max-w-6xl mx-auto px-4 sm:grid-cols-2 lg:grid-cols-3">
         {soluciones.map((solucion) => (
@@ -29,15 +29,11 @@ const soluciones = (await getCollection("soluciones")).sort((a, b) => b.data.pub
                 class="w-full h-48 object-cover"
               />
               <div class="p-6">
-                <h4 class="text-xl font-semibold text-gray-900  mb-3">
+                <h4 class="text-xl text-center font-semibold text-gray-900  mb-3">
                   {t(solucion.data.title)}
                 </h4>
-                <p class="text-sm text-gray-600  mb-4">
-                  {solucion.data.pubDate.toLocaleDateString()}
-                </p>
-                <p class="text-gray-700  line-clamp-3">
-                  {t(solucion.data.description) || 'Descripción del artículo...'}
-                </p>
+                
+               
               </div>
             </a>
           </li>

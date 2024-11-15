@@ -6,8 +6,11 @@
         "contact": "Contact",
         "solutions": "Solutions",
         "solution.01": "Web Design and Development",
+        "descr-01" : "We create custom, modern, and functional websites designed to showcase your brand and deliver a unique user experience. From visual design to technical development, we ensure an efficient and tailored digital platform.",
         "solution.02": "Corporate Identity Manual Design",
-        "solution.03": "Search Engine Optimization"
+        "descr-02" : "We develop corporate identity manuals that reflect the essence of your brand, defining colors, typography, logo, and usage guidelines. We ensure a consistent and professional image across all touchpoints with your clients.",
+        "solution.03": "Search Engine Optimization",
+        "descr-03" : "We enhance your website's visibility on search engines with personalized SEO strategies. We improve your organic ranking, ensuring more customers can effectively find your products or services."
     },
     "home": {
         "hero-title": "We help transform",

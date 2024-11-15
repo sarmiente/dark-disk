@@ -6,8 +6,11 @@
         "contact": "Contacto",
         "solutions": "Soluciones",
         "solution.01": "Diseño y Desarrollo Web",
+        "descr-01" : "Creamos sitios web personalizados, modernos y funcionales, diseñados para destacar tu marca y ofrecer una experiencia única a tus usuarios. Desde el diseño visual hasta el desarrollo técnico, garantizamos una plataforma digital eficiente y adaptada a tus necesidades.",
         "solution.02": "Manual de Identidad Corporativa",
-        "solution.03": "Optimización en Motores de Búsqueda"
+        "descr-02" : "Desarrollamos manuales de identidad corporativa que reflejan la esencia de tu marca, definiendo colores, tipografía, logo y directrices de uso. Aseguramos una imagen coherente y profesional en cada punto de contacto con tus clientes.",
+        "solution.03": "Optimización en Motores de Búsqueda",
+        "descr-03" : "Potenciamos la visibilidad de tu sitio web en los buscadores con estrategias de SEO personalizadas. Mejoramos tu posicionamiento orgánico para que más clientes encuentren tus productos o servicios de manera efectiva."
     },
     "home": {
         "hero-title": "Ayudamos",
