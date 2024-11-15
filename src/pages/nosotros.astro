@@ -1,5 +1,6 @@
 ---
 import { changeLanguage } from "i18next";
+import { t } from "i18next";
 import Layout from "../layouts/Layout.astro";
 
 changeLanguage("es");
@@ -22,17 +23,17 @@ const { description } = Astro.props;
             <div class="lg:py-24">
               <p class="mt-2 text-3xl font-bold tracking-tight text-orange-600 sm:text-4xl">Quienes Somos</p>
               <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600">
-                Potenciamos tu experiencia online y te ayudamos a crecer. Nuestro enfoque se centra en crear una presencia digital estratégica, personalizada y efectiva, que no solo atraiga a tu audiencia, sino que también convierta visitantes en clientes fieles. 
+               {t("about.parag.01")}
                   
               </p>
                 <div class="mt-6 text-lg leading-8 dark:text-white text-gray-600">
-                  Sabemos que cada cliente es único y, por ello, diseñamos soluciones digitales adaptadas a las necesidades y metas específicas de cada proyecto.
+                  {t("about.parag.02")}
                 </div>
               <a
                 href="#"
                 class="mt-8 inline-block rounded bg-oran-600 px-12 py-3 text-sm font-medium text-white transition bg-orange-600 hover:bg-opacity-75 focus:outline-none "
               >
-                Contactanos
+                {t("home.hero-button.02")}
               </a>
             </div>
           </div>
@@ -44,7 +45,7 @@ const { description } = Astro.props;
           <div class="mx-auto">
             
             <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600 ">
-              Somos un equipo multidisciplinar y multicultural con pasión por la innovación y el marketing digital, comprometido con la formación continua y el uso de tecnología avanzada para brindar resultados excepcionales. Creemos en el poder de la personalización y los datos como herramientas clave para alcanzar objetivos de negocio de manera eficaz.  
+              {t("about.parag.03")}
               </p>
              
           </div>
@@ -79,7 +80,7 @@ const { description } = Astro.props;
                 </h2>
       
                 <p class=" text-white/90 sm:mt-4 sm:block">
-                  Ofrecer soluciones de diseño web, desarrollo digital, identidad corporativa y optimización en motores de búsqueda, con un enfoque personalizado y remoto, que impulsen el crecimiento de nuestros clientes. Nos comprometemos a entender las metas y desafíos de cada empresa, adaptándonos a sus necesidades específicas para entregar resultados medibles y duraderos, aprovechando el talento joven y dedicado de nuestro equipo en Colombia.
+                  {t("about.mision")}
                 </p>
       
                 
@@ -96,7 +97,7 @@ const { description } = Astro.props;
         <div class="mx-auto">
           
           <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600 ">
-            Trabajamos como una familia profesional, brindando una experiencia de servicio ágil y cercana, enfocada en la calidad constante y en la construcción de relaciones duraderas basadas en la confianza, la transparencia y el éxito tangible. La diversidad de nuestro equipo nos permite abordar los desafíos desde perspectivas globales, adaptándonos a las cambiantes dinámicas del mercado y ofreciendo siempre soluciones innovadoras y eficaces.
+            {t("about.parag.04")}
             </p>
            
         </div>
@@ -114,7 +115,7 @@ const { description } = Astro.props;
                 </h2>
       
                 <p class=" text-white/90 sm:mt-4 sm:block">
-                  Ser la agencia líder en soluciones digitales remotas en Latinoamérica, reconocida por la creatividad, innovación y profesionalismo de nuestro equipo. Aspiramos a construir relaciones sólidas con nuestros clientes, destacándonos como socios estratégicos en su éxito y consolidando un estándar de calidad que trascienda fronteras.
+                  {t("about.vision")}
                 </p>
       
                
@@ -142,7 +143,7 @@ const { description } = Astro.props;
         <div class="mx-auto">
           
           <p class="mt-6 text-lg leading-8 dark:text-white text-gray-600 ">
-            Nos enorgullece acompañar a nuestros clientes en su camino hacia el éxito digital, construyendo una presencia que no solo sea visible, sino verdaderamente reconocida. Aquí, los límites se expanden para transformar el crecimiento de tu marca en una realidad.
+            {t("about.parag.05")}
             </p>
            
         </div>

@@ -10,6 +10,7 @@ const navItems = {
     { href: localizePath("/"), text: t("nav.home") },
     { href: localizePath("/nosotros"), text: t("nav.about") },
     { href: localizePath("/precios"), text: t("nav.pricing") },
+    { href: localizePath("/blog"), text: "Blog" },
     { href: localizePath("/contacto"), text: t("nav.contact") },
   ],
   dropmenu: [
@@ -33,7 +34,7 @@ const dropdowns = navItems.dropmenu[0].dropdown;
     <div class="flex items-center justify-between">
 
       <!-- Logo - Izquierda en Desktop y Mobile -->
-      <a href="/" class="flex-shrink-0">
+      <a href={localizePath("/")} class="flex-shrink-0">
         <img class="h-8 w-8" src="/favicon.svg" alt="Logo" />
       </a>
 

@@ -1,0 +1,177 @@
+---
+import { changeLanguage } from "i18next";
+import { t } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+changeLanguage("en");
+
+const { description } = Astro.props;
+---
+
+<Layout title="Terms and Conditions" description={description}>
+  <section class="bg-white dark:bg-slate-800 pb-20 pt-12">
+    <div class="lg:grid lg:grid-cols-12 py-24">
+      <main
+        class="flex items-center justify-center px-8 sm:px-12 lg:col-span-12"
+      >
+        <div class="max-w-xl lg:pt-12 lg:max-w-3xl">
+          <h1
+            class="text-2xl font-bold text-orange-500 sm:text-3xl md:text-4xl"
+          >
+            {t("terms.global")}
+          </h1>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            {t("terms.intro")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.intro-01")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            1. {t("terms.title-01")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-01")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            2. {t("terms.title-02")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-02")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            3. {t("terms.title-03")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-03")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            4. {t("terms.title-04")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-04")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            5. {t("terms.title-05")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-05")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            6. {t("terms.title-06")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-06")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            7. {t("terms.title-07")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-07")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            8. {t("terms.title-08")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-08")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            9. {t("terms.title-09")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-09")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            10. {t("terms.title-10")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-10")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            11. {t("terms.title-11")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("terms.parag-11")}
+          </p>
+
+          <div>
+            <p
+              class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+            >
+              Sarpin Agency ©
+            </p>
+            <p class="text-gray-500 dark:text-white">
+              Cartagena de Indias, Colombia
+            </p>
+
+            <a
+              href="https://api.whatsapp.com/send/?phone=573008124453"
+              target="_blank"
+              class="flex"
+            >
+              <Icon name="envelop" class="h-5 w-5 mr-2" />
+              <p class="text-gray-500 dark:text-white">info@sarpin.agency</p>
+            </a>
+
+            <a
+              href="https://api.whatsapp.com/send/?phone=573008124453"
+              target="_blank"
+              class="flex text-green-600"
+            >
+              <Icon name="whatsapp" class="h-5 w-5" />
+              <p class="text-gray-500 dark:text-white">+57 300 812 4453</p>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </section>
+</Layout>

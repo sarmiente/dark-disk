@@ -1,0 +1,175 @@
+---
+import { changeLanguage } from "i18next";
+import { t } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+changeLanguage("en");
+
+const { description } = Astro.props;
+---
+
+<Layout title="Privacy Policy" description={description}>
+  <section class="bg-white dark:bg-slate-800 pb-20 pt-12">
+    <div class="lg:grid lg:grid-cols-12 py-24">
+      <main
+        class="flex items-center justify-center px-8 sm:px-12 lg:col-span-12"
+      >
+        <div class="max-w-xl lg:pt-12 lg:max-w-3xl">
+          <h1
+            class="text-2xl font-bold text-orange-500 sm:text-3xl md:text-4xl"
+          >
+            {t("footer.policy")}
+          </h1>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            {t("privacy.global")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.global-01")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            1. {t("privacy.title-01")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-01")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            2. {t("privacy.title-02")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-02")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+          3.  {t("privacy.title-03")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-03")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            4. {t("privacy.title-04")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-04")}
+          </p>
+
+          <p 
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            5. {t("privacy.title-05")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-05")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            6. {t("privacy.title-06")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-06")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            7. {t("privacy.title-07")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-07")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            8. {t("privacy.title-08")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-08")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+          9.  {t("privacy.title-09")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-09")}
+          </p>
+
+          <p
+            class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white"
+          >
+            10. {t("privacy.title-10")}
+          </p>
+
+          <p class="mt-4 leading-relaxed text-gray-500 dark:text-white">
+            {t("privacy.parag-10")}
+          </p>
+
+          
+          <div>
+            <p class="mt-4 leading-relaxed font-medium text-gray-500 dark:text-white">
+              Sarpin Agency ©
+              
+            </p>
+            <p class="text-gray-500 dark:text-white">
+              Cartagena de Indias, Colombia
+              
+            </p>
+           
+        
+  
+                <a href="https://api.whatsapp.com/send/?phone=573008124453" target="_blank" class="flex">
+                  <Icon name="envelop" class="h-5 w-5 mr-2" />
+                  <p class="text-gray-500 dark:text-white">
+                  
+                    info@sarpin.agency
+                    
+                  </p>
+                </a>
+  
+            <a href="https://api.whatsapp.com/send/?phone=573008124453" target="_blank" class="flex text-green-600">
+              <Icon name="whatsapp" class="h-5 w-5" />
+              <p class="text-gray-500 dark:text-white">
+              
+                +57 300 812 4453
+                
+              </p>
+            </a>
+           </div>
+  
+  
+
+
+
+        </div>
+      </main>
+    </div>
+  </section></Layout
+>

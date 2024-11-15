@@ -10,60 +10,145 @@
         "solution.03": "Optimización en Motores de Búsqueda"
     },
     "home": {
-      "hero-title": "Ayudamos",
-      "hero-span.01": "marcas",
-      "hero-span.02": "y productos",
-      "hero-subtitle": "Llevamos tu idea a la web, con diseños que capturan la esencia de tu negocio.",
-      "hero-button.01": "Explorar Soluciones",
-      "hero-button.02": "Contactanos"
+        "hero-title": "Ayudamos",
+        "hero-span.01": "marcas",
+        "hero-span.02": "y productos",
+        "hero-subtitle": "Llevamos tu idea a la web, con diseños que capturan la esencia de tu negocio.",
+        "hero-button.01": "Explorar Soluciones",
+        "hero-button.02": "Contactanos"
     },
-    "footer":{
-      "policy": "Politica de privacidad",
-      "terms": "Terminos y condiciones",
-      "rights": "Todos los derechos reservados.",
-      "company" : "Compañia"
+    "footer": {
+        "policy": "Politica de privacidad",
+        "terms": "Terminos y condiciones",
+        "rights": "Todos los derechos reservados.",
+        "company": "Compañia",
+        "resources" : "Recursos",
+        "portfolio" : "Portafolio"
     },
-    "infos" : {
-        "title" : "Potencia tus proyectos",
-        "subtitle" : "Colabora con nosotros",
-        "description" : "Desbloquea todo el potencial de tus proyectos desde el diseño y desarrollo web hasta el marketing y la analítica, te ayudamos a crear una presencia en línea sólida y atractiva que impulse tus resultados.",
-        "list-title.01" : "Enfoque Colaborativo",
-        "list-descr.01" : "Trabaja junto con los miembros de tu equipo en tiempo real.",
-        "list-title.02" : "Desarrollo Innovador",
-        "list-descr.02" : "Mantente a la vanguardia con acceso a actualizaciones constantes.",
-        "list-title.03" : "Soluciones Escalable",
-        "list-descr.03" : "Con nuestras soluciones ofrecemos la escalabilidad necesaria para adaptars tu negocio a las necesidades del mercado."
+    "infos": {
+        "title": "Potencia tus proyectos",
+        "subtitle": "Colabora con nosotros",
+        "description": "Desbloquea todo el potencial de tus proyectos desde el diseño y desarrollo web hasta el marketing y la analítica, te ayudamos a crear una presencia en línea sólida y atractiva que impulse tus resultados.",
+        "list-title.01": "Enfoque Colaborativo",
+        "list-descr.01": "Trabaja junto con los miembros de tu equipo en tiempo real.",
+        "list-title.02": "Desarrollo Innovador",
+        "list-descr.02": "Mantente a la vanguardia con acceso a actualizaciones constantes.",
+        "list-title.03": "Soluciones Escalable",
+        "list-descr.03": "Con nuestras soluciones ofrecemos la escalabilidad necesaria para adaptars tu negocio a las necesidades del mercado."
     },
     "features": {
-    "title": "Nuestras Soluciones",
-    "description": "Explora las soluciones diseñadas especialmente para ti.",
-    "impact": {
-        "description": "Estamos creando un impacto positivo juntos. Reconocemos el valor de tu trabajo y te ayudamos a potenciarlo en línea con estrategias SEO efectivas."
-    },
-    "options": {
-        "landingPage": {
-            "description": "Página de destino diseñada para captar la atención de los visitantes y convertirlos en clientes, perfecta para campañas y promociones."
+        "title": "Nuestras Soluciones",
+        "description": "Explora las soluciones diseñadas especialmente para ti.",
+        "impact": {
+            "description": "Estamos creando un impacto positivo juntos. Reconocemos el valor de tu trabajo y te ayudamos a potenciarlo en línea con estrategias SEO efectivas."
         },
-        "onlineStore": {
-            "title": "Tienda Online",
-            "description": "Plataforma de comercio electrónico que permite a los clientes comprar productos o servicios, con opciones integradas de pago."
-        },
-        "corporate": {
-            "title": "Corporativa",
-            "description": "Sitio web profesional que refleja la identidad y valores de tu empresa, ideal para comunicar misión y servicios con una presencia sólida."
-        },
-        "blog": {
-            "description": "Espacio dinámico para compartir artículos, noticias y contenido relevante, diseñado para atraer y mantener el interés de tu audiencia."
-        },
-        "portfolio": {
-            "title": "Portafolios",
-            "description": "Vitrina en línea para mostrar tu trabajo, proyectos o creatividad, destacando tus habilidades y atrayendo nuevas oportunidades."
-        },
-        "newsletters": {
-            "description": "Herramienta para crear y distribuir boletines informativos desde tu sitio web, manteniendo a tu audiencia informada y conectada."
+        "options": {
+            "landingPage": {
+                "description": "Página de destino diseñada para captar la atención de los visitantes y convertirlos en clientes, perfecta para campañas y promociones."
+            },
+            "onlineStore": {
+                "title": "Tienda Online",
+                "description": "Plataforma de comercio electrónico que permite a los clientes comprar productos o servicios, con opciones integradas de pago."
+            },
+            "corporate": {
+                "title": "Corporativa",
+                "description": "Sitio web profesional que refleja la identidad y valores de tu empresa, ideal para comunicar misión y servicios con una presencia sólida."
+            },
+            "blog": {
+                "description": "Espacio dinámico para compartir artículos, noticias y contenido relevante, diseñado para atraer y mantener el interés de tu audiencia."
+            },
+            "portfolio": {
+                "title": "Portafolios",
+                "description": "Vitrina en línea para mostrar tu trabajo, proyectos o creatividad, destacando tus habilidades y atrayendo nuevas oportunidades."
+            },
+            "newsletters": {
+                "description": "Herramienta para crear y distribuir boletines informativos desde tu sitio web, manteniendo a tu audiencia informada y conectada."
+            }
         }
-    }
-}
+    },
+    "cta": {
+        "title": "Optimiza tu Presencia en Google.",
+        "descr": "Descubre cómo tu sitio web se posiciona en los resultados de búsqueda. ¡Obtén un informe SEO gratuito!",
+        "btn": "Obtener informe"
+    },
+    "about": {
+        "parag.01" : "Potenciamos tu experiencia online y te ayudamos a crecer. Nuestro enfoque se centra en crear una presencia digital estratégica, personalizada y efectiva, que no solo atraiga a tu audiencia, sino que también convierta visitantes en clientes fieles.",
+        "parag.02" : "Sabemos que cada cliente es único y, por ello, diseñamos soluciones digitales adaptadas a las necesidades y metas específicas de cada proyecto.",
+        "parag.03" : "Somos un equipo multidisciplinar y multicultural con pasión por la innovación y el marketing digital, comprometido con la formación continua y el uso de tecnología avanzada para brindar resultados excepcionales. Creemos en el poder de la personalización y los datos como herramientas clave para alcanzar objetivos de negocio de manera eficaz.",
+        "mision" : "Ofrecer soluciones de diseño web, desarrollo digital, identidad corporativa y optimización en motores de búsqueda, con un enfoque personalizado y remoto, que impulsen el crecimiento de nuestros clientes. Nos comprometemos a entender las metas y desafíos de cada empresa, adaptándonos a sus necesidades específicas para entregar resultados medibles y duraderos, aprovechando el talento joven y dedicado de nuestro equipo en Colombia.",
+        "parag.04" : "Trabajamos como una familia profesional, brindando una experiencia de servicio ágil y cercana, enfocada en la calidad constante y en la construcción de relaciones duraderas basadas en la confianza, la transparencia y el éxito tangible. La diversidad de nuestro equipo nos permite abordar los desafíos desde perspectivas globales, adaptándonos a las cambiantes dinámicas del mercado y ofreciendo siempre soluciones innovadoras y eficaces.",
+        "vision" : "Ser la agencia líder en soluciones digitales remotas en Latinoamérica, reconocida por la creatividad, innovación y profesionalismo de nuestro equipo. Aspiramos a construir relaciones sólidas con nuestros clientes, destacándonos como socios estratégicos en su éxito y consolidando un estándar de calidad que trascienda fronteras.",
+        "parag.05" : "Nos enorgullece acompañar a nuestros clientes en su camino hacia el éxito digital, construyendo una presencia que no solo sea visible, sino verdaderamente reconocida. Aquí, los límites se expanden para transformar el crecimiento de tu marca en una realidad."
 
+    },
+    "privacy":{
+        "global" : "Cumplimiento Global de Privacidad de Datos",
+        "global-01":"Sarpin Agency © se compromete a proteger la privacidad de todos sus usuarios, independientemente de su ubicación. Implementamos medidas para cumplir con las normativas de protección de datos aplicables a nivel global, incluidas las del Reglamento General de Protección de Datos (GDPR) para usuarios de la Unión Europea, CCPA en California, LGPD en Brasil, y otras leyes locales donde operamos.",
+        "title-01": "Información General",
+        "parag-01": "La presente Política de Privacidad establece los términos en que Sarpin Agency © usa y protege la información proporcionada por sus usuarios al utilizar nuestro sitio web [https://devs.sarpin.agency/]. Nos comprometemos a garantizar la seguridad de los datos de nuestros usuarios. Cuando solicitamos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que solo se empleará de acuerdo con los términos de este documento.",
+        "title-02": "Información Recopilada",
+        "parag-02": "Nuestra plataforma puede recopilar información personal, como nombre, información de contacto (por ejemplo, dirección de correo electrónico y número de teléfono), y datos demográficos. También, cuando sea necesario, podrá ser requerida información específica para procesar un pedido o realizar una entrega o facturación.",
+        "title-03": "Uso de la Información Recopilada",
+        "parag-03": "Sarpin Agency © utiliza la información recopilada con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos, y mejorar nuestros productos y servicios. Es posible que enviemos correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted. Estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.",
+        "title-04": "Protección de Datos",
+        "parag-04": "Sarpin Agency © se compromete a mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos de que no exista acceso no autorizado.",
+        "title-05": "Cookies",
+        "parag-05": "Nuestro sitio web utiliza cookies para identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y luego se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador, pero es importante que sepa que al hacerlo, puede que no tenga acceso a ciertas funcionalidades de nuestro sitio web.",
+        "title-06": "Enlaces a Terceros",
+        "parag-06": "Este sitio web podría contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted hace clic en estos enlaces y abandona nuestra página, ya no tenemos control sobre el sitio al que es redirigido y, por lo tanto, no somos responsables de los términos o la privacidad ni de la protección de sus datos en esos sitios de terceros.",
+        "title-07": "Control de su Información Personal",
+        "parag-07": "Usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web en cualquier momento. Cada vez que se le solicite rellenar un formulario, como el de registro de usuario, puede optar por no recibir información. En caso de que haya marcado la opción de recibir boletines o publicidad, puede cancelarla en cualquier momento.",
+        "title-08": "Derechos del Usuario",
+        "parag-08": "Como usuario, tiene derecho a acceder, rectificar, cancelar u oponerse al tratamiento de sus datos personales en cualquier momento. Para ejercer estos derechos, puede ponerse en contacto con nosotros a través del siguiente correo electrónico: [info@sarpin.agency].",
+        "title-09": "Cambios en la Política de Privacidad",
+        "parag-09": "Sarpin Agency © se reserva el derecho de modificar los términos de esta Política de Privacidad en cualquier momento. Los cambios se publicarán en esta página y serán efectivos de inmediato.",
+        "title-10": "Contacto",
+        "parag-10": "Para cualquier pregunta sobre esta Política de Privacidad o sobre cómo manejamos sus datos personales, puede contactarnos en:"
+
+    },
+        "terms": {
+            "global": "Términos y Condiciones",
+            "intro": "Sarpin Agency © - Términos y Condiciones de Uso",
+            "intro-01": "Bienvenido a Sarpin Agency ©. Al acceder y utilizar nuestro sitio web [https://devs.sarpin.agency/], aceptas estar sujeto a estos Términos y Condiciones de uso. Léelos detenidamente antes de utilizar nuestro Sitio.",
+            
+            "title-01": "Aceptación de los Términos",
+            "parag-01": "Al ingresar y utilizar el Sitio de Sarpin Agency ©, aceptas los Términos y Condiciones aquí descritos. Si no estás de acuerdo con estos términos, te recomendamos no utilizar este sitio web.",
+    
+            "title-02": "Modificaciones de los Términos",
+            "parag-02": "Sarpin Agency © se reserva el derecho de modificar, actualizar o cambiar estos Términos y Condiciones en cualquier momento. Los cambios entrarán en vigencia de inmediato al publicarse en esta página. Es tu responsabilidad revisar esta sección periódicamente para estar al tanto de las modificaciones.",
+    
+            "title-03": "Uso del Sitio",
+            "parag-03": "El acceso y uso del Sitio está permitido exclusivamente para fines legales y de acuerdo con estos Términos y Condiciones. No debes utilizar el Sitio de manera que viole las leyes o regulaciones aplicables, transmita material ofensivo o introduzca códigos dañinos que afecten el funcionamiento del Sitio.",
+    
+            "title-04": "Propiedad Intelectual",
+            "parag-04": "Todo el contenido de este Sitio, incluyendo textos, gráficos, logos, imágenes, videos, software y demás materiales, es propiedad de Sarpin Agency © o se utiliza bajo licencia. No está permitido copiar, reproducir o distribuir el Contenido sin autorización previa por escrito de Sarpin Agency ©.",
+    
+            "title-05": "Política de Privacidad",
+            "parag-05": "El uso de este Sitio también se rige por nuestra Política de Privacidad. Al utilizar el Sitio, confirmas que has leído y aceptado los términos de nuestra política de privacidad, disponible en [https://devs.sarpin.agency/politica-de-privacidad].",
+    
+            "title-06": "Enlaces a Terceros",
+            "parag-06": "Nuestro Sitio puede contener enlaces a sitios web de terceros que no están bajo el control de Sarpin Agency ©. No somos responsables del contenido ni de los términos y condiciones de dichos sitios externos.",
+    
+            "title-07": "Exclusión de Responsabilidad",
+            "parag-07": "Sarpin Agency © no garantiza que el Sitio esté libre de errores o interrupciones. En la medida permitida por la ley, no somos responsables de daños directos, indirectos, incidentales o consecuentes que puedan resultar del uso del Sitio o de la imposibilidad de utilizarlo.",
+    
+            "title-08": "Limitación de Responsabilidad",
+            "parag-08": "Sarpin Agency © no será responsable por daños o perjuicios que resulten de la utilización o mal uso de este Sitio, incluyendo pérdida de datos o interrupciones en el servicio.",
+    
+            "title-09": "Indemnización",
+            "parag-09": "Al utilizar este Sitio, aceptas indemnizar y eximir de responsabilidad a Sarpin Agency © y a sus empleados, directores, agentes y afiliados de cualquier reclamación o demanda, incluyendo gastos legales, relacionada con el uso indebido del Sitio o la infracción de derechos de terceros.",
+    
+            "title-10": "Ley Aplicable y Jurisdicción",
+            "parag-10": "Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes de Colombia. En caso de disputa, te sometes a la jurisdicción exclusiva de los tribunales competentes en Colombia.",
+    
+            "title-11": "Contacto",
+            "parag-11": "Para cualquier duda o consulta sobre estos Términos y Condiciones, puedes ponerte en contacto con nosotros a través de: "
+        },
+        
+        "markdown" : {
+            "title" : "Diseño Web: Creando Experiencias Digitales Atractivas",
+            "descr" : "Español"
+        }
+    
     
 }

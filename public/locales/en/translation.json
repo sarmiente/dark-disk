@@ -10,61 +10,141 @@
         "solution.03": "Search Engine Optimization"
     },
     "home": {
-      "hero-title": "We help transform",
-      "hero-span.01": "brands",
-      "hero-span.02": "and products",
-      "hero-subtitle": "We take your idea to the web, with designs that capture the essence of your business.",
-      "hero-button.01": "Explore Solutions",
-      "hero-button.02": "Contact Us"
+        "hero-title": "We help transform",
+        "hero-span.01": "brands",
+        "hero-span.02": "and products",
+        "hero-subtitle": "We take your idea to the web, with designs that capture the essence of your business.",
+        "hero-button.01": "Explore Solutions",
+        "hero-button.02": "Contact Us"
     },
     "footer": {
-      "policy": "Privacy Policy",
-      "terms": "Terms and Conditions",
-      "rights": "All rights reserved.",
-      "company" : "Company"
+        "policy": "Privacy Policy",
+        "terms": "Terms and Conditions",
+        "rights": "All rights reserved.",
+        "company": "Company",
+        "resources": "Resources",
+        "portfolio": "Portfolio"
     },
     "infos": {
-    "title": "Boost Your Projects",
-    "subtitle" : "Collaborate with Us",
-    "description": "Unlock the full potential of your projects, from web design and development to marketing and analytics. We help you create a strong and appealing online presence that drives your results.",
-    "list-title.01": "Collaborative Approach",
-    "list-descr.01": "Work alongside your team members in real time.",
-    "list-title.02": "Innovative Development",
-    "list-descr.02": "Stay ahead with constant access to updates.",
-    "list-title.03": "Scalable Solutions",
-    "list-descr.03": "Our solutions offer the scalability needed to adapt your business to market demands."
-},
-"features": {
-    "title": "Our Solutions",
-    "description": "Explore solutions designed especially for you.",
-    "impact": {
-        "description": "We are creating a positive impact together. We recognize the value of your work and help you enhance it online with effective SEO strategies."
+        "title": "Boost Your Projects",
+        "subtitle": "Collaborate with Us",
+        "description": "Unlock the full potential of your projects, from web design and development to marketing and analytics. We help you create a strong and appealing online presence that drives your results.",
+        "list-title.01": "Collaborative Approach",
+        "list-descr.01": "Work alongside your team members in real time.",
+        "list-title.02": "Innovative Development",
+        "list-descr.02": "Stay ahead with constant access to updates.",
+        "list-title.03": "Scalable Solutions",
+        "list-descr.03": "Our solutions offer the scalability needed to adapt your business to market demands."
     },
-    "options": {
-        "landingPage": {
-            "description": "A landing page designed to capture visitors' attention and convert them into customers, perfect for campaigns and promotions."
+    "features": {
+        "title": "Our Solutions",
+        "description": "Explore solutions designed especially for you.",
+        "impact": {
+            "description": "We are creating a positive impact together. We recognize the value of your work and help you enhance it online with effective SEO strategies."
         },
-        "onlineStore": {
-            "title": "Online Store",
-            "description": "E-commerce platform that allows customers to buy products or services with integrated payment options."
-        },
-        "corporate": {
-            "title": "Corporate",
-            "description": "Professional website reflecting your company's identity and values, ideal for communicating mission and services with a solid presence."
-        },
-        "blog": {
-            "description": "Dynamic space to share articles, news, and relevant content, designed to attract and retain your audience's interest."
-        },
-        "portfolio": {
-            "title": "Portfolio",
-            "description": "An online showcase to display your work, projects, or creativity, highlighting your skills and attracting new opportunities."
-        },
-        "newsletters": {
-            "description": "A tool to create and distribute newsletters from your website, keeping your audience informed and connected."
+        "options": {
+            "landingPage": {
+                "description": "A landing page designed to capture visitors' attention and convert them into customers, perfect for campaigns and promotions."
+            },
+            "onlineStore": {
+                "title": "Online Store",
+                "description": "E-commerce platform that allows customers to buy products or services with integrated payment options."
+            },
+            "corporate": {
+                "title": "Corporate",
+                "description": "Professional website reflecting your company's identity and values, ideal for communicating mission and services with a solid presence."
+            },
+            "blog": {
+                "description": "Dynamic space to share articles, news, and relevant content, designed to attract and retain your audience's interest."
+            },
+            "portfolio": {
+                "title": "Portfolio",
+                "description": "An online showcase to display your work, projects, or creativity, highlighting your skills and attracting new opportunities."
+            },
+            "newsletters": {
+                "description": "A tool to create and distribute newsletters from your website, keeping your audience informed and connected."
+            }
         }
-    }
-}
-
-
+    },
+    "cta": {
+        "title": "Optimize Your Presence on Google",
+        "descr": "Discover how your website ranks in search results. Get a free SEO report!",
+        "btn": "Get Report"
+    },
+    "about": {
+        "parag.01": "We enhance your online experience and help you grow. Our approach focuses on creating a strategic, personalized, and effective digital presence that not only attracts your audience but also converts visitors into loyal customers.",
+        "parag.02": "We know that every client is unique, and that's why we design digital solutions tailored to the specific needs and goals of each project.",
+        "parag.03": "We are a multidisciplinary and multicultural team with a passion for innovation and digital marketing, committed to continuous learning and the use of advanced technology to deliver exceptional results. We believe in the power of personalization and data as key tools to achieve business goals effectively.",
+        "mision": "To offer web design solutions, digital development, corporate identity, and search engine optimization with a personalized, remote approach that drives our clients' growth. We are committed to understanding each company’s goals and challenges, adapting to their specific needs to deliver measurable and lasting results, leveraging the young and dedicated talent of our team in Colombia.",
+        "parag.04": "We work as a professional family, providing a fast and personalized service experience focused on consistent quality and building long-lasting relationships based on trust, transparency, and tangible success. The diversity of our team allows us to tackle challenges from global perspectives, adapting to changing market dynamics and always offering innovative and effective solutions.",
+        "vision": "To be the leading remote digital solutions agency in Latin America, recognized for the creativity, innovation, and professionalism of our team. We aspire to build strong relationships with our clients, standing out as strategic partners in their success and establishing a standard of quality that transcends borders.",
+        "parag.05": "We take pride in supporting our clients on their journey to digital success, building a presence that is not only visible but truly recognized. Here, boundaries expand to transform your brand’s growth into a reality."
+    },
+    "privacy": {
+        "global": "Global Privacy Compliance",
+        "global-01": "Sarpin Agency © is committed to protecting the privacy of all its users, regardless of their location. We implement measures to comply with data protection regulations applicable worldwide, including the General Data Protection Regulation (GDPR) for users in the European Union, CCPA in California, LGPD in Brazil, and other local laws where we operate.",
+        "title-01": "General Information",
+        "parag-01": "This Privacy Policy sets out the terms on which Sarpin Agency © uses and protects the information provided by its users when using our website [https://devs.sarpin.agency/]. We are committed to ensuring the security of our users' data. When we ask you to fill in fields with personal information that can identify you, we do so with the assurance that it will only be used in accordance with this document.",
+        "title-02": "Information Collected",
+        "parag-02": "Our platform may collect personal information, such as name, contact information (e.g., email address and phone number), and demographic data. Additionally, specific information may be required when necessary to process an order or perform delivery or billing.",
+        "title-03": "Use of Collected Information",
+        "parag-03": "Sarpin Agency © uses the information collected in order to provide the best possible service, particularly to keep track of users, orders, and improve our products and services. We may periodically send emails through our site with special offers, new products, and other advertising information that we believe is relevant to you. These emails will be sent to the address you provide and can be canceled at any time.",
+        "title-04": "Data Protection",
+        "parag-04": "Sarpin Agency © is committed to keeping your information secure. We use the most advanced systems and update them constantly to ensure that there is no unauthorized access.",
+        "title-05": "Cookies",
+        "parag-05": "Our website uses cookies to identify the pages that are visited and their frequency. This information is used solely for statistical analysis and is then permanently deleted. You can delete cookies at any time from your computer, but please be aware that doing so may limit access to certain functionalities on our website.",
+        "title-06": "Third-Party Links",
+        "parag-06": "This website may contain links to other sites of interest. Once you click on these links and leave our site, we no longer have control over the site you are redirected to, and therefore we are not responsible for the terms, privacy, or protection of your data on those third-party sites.",
+        "title-07": "Control of Your Personal Information",
+        "parag-07": "You can restrict the collection or use of personal information provided to our website at any time. Whenever you are asked to fill out a form, such as a user registration form, you may choose not to receive information. If you have marked the option to receive newsletters or advertising, you can cancel it at any time.",
+        "title-08": "User Rights",
+        "parag-08": "As a user, you have the right to access, rectify, cancel, or oppose the processing of your personal data at any time. To exercise these rights, you can contact us via the following email address: [info@sarpin.agency].",
+        "title-09": "Changes to the Privacy Policy",
+        "parag-09": "Sarpin Agency © reserves the right to modify the terms of this Privacy Policy at any time. Changes will be posted on this page and will be effective immediately.",
+        "title-10": "Contact",
+        "parag-10": "For any questions about this Privacy Policy or how we handle your personal data, you can contact us at:"
+    },
+        "terms": {
+            "global": "Terms and Conditions",
+            "intro": "Sarpin Agency © - Terms and Conditions of Use",
+            "intro-01": "Welcome to Sarpin Agency ©. By accessing and using our website [https://devs.sarpin.agency/], you agree to be bound by these Terms and Conditions of use. Please read them carefully before using our Site.",
+            
+            "title-01": "Acceptance of Terms",
+            "parag-01": "By accessing and using Sarpin Agency's © Site, you agree to the Terms and Conditions described here. If you do not agree with these terms, we recommend that you do not use this website.",
+    
+            "title-02": "Modifications to the Terms",
+            "parag-02": "Sarpin Agency © reserves the right to modify, update, or change these Terms and Conditions at any time. Changes will be effective immediately upon posting on this page. It is your responsibility to periodically review this section to stay informed of any modifications.",
+    
+            "title-03": "Use of the Site",
+            "parag-03": "Access to and use of the Site is permitted exclusively for lawful purposes and in accordance with these Terms and Conditions. You must not use the Site in a way that violates applicable laws or regulations, transmits offensive material, or introduces harmful code that affects the operation of the Site.",
+    
+            "title-04": "Intellectual Property",
+            "parag-04": "All content on this Site, including text, graphics, logos, images, videos, software, and other materials, is owned by Sarpin Agency © or used under license. You may not copy, reproduce, or distribute the Content without prior written authorization from Sarpin Agency ©.",
+    
+            "title-05": "Privacy Policy",
+            "parag-05": "The use of this Site is also governed by our Privacy Policy. By using the Site, you confirm that you have read and agreed to the terms of our privacy policy, available at [https://devs.sarpin.agency/privacy-policy].",
+    
+            "title-06": "Links to Third Parties",
+            "parag-06": "Our Site may contain links to third-party websites that are not under the control of Sarpin Agency ©. We are not responsible for the content or the terms and conditions of these external sites.",
+    
+            "title-07": "Disclaimer",
+            "parag-07": "Sarpin Agency © does not guarantee that the Site will be error-free or uninterrupted. To the extent permitted by law, we are not responsible for direct, indirect, incidental, or consequential damages that may result from the use of the Site or the inability to use it.",
+    
+            "title-08": "Limitation of Liability",
+            "parag-08": "Sarpin Agency © shall not be liable for any damages or losses resulting from the use or misuse of this Site, including data loss or service interruptions.",
+    
+            "title-09": "Indemnification",
+            "parag-09": "By using this Site, you agree to indemnify and hold harmless Sarpin Agency © and its employees, directors, agents, and affiliates from any claim or demand, including reasonable legal fees, related to your improper use of the Site or infringement of third-party rights.",
+    
+            "title-10": "Governing Law and Jurisdiction",
+            "parag-10": "These Terms and Conditions shall be governed by and interpreted in accordance with the laws of Colombia. In the event of a dispute, you submit to the exclusive jurisdiction of the competent courts in Colombia.",
+    
+            "title-11": "Contact",
+            "parag-11": "For any questions or inquiries about these Terms and Conditions, you can contact us through:"
+        },
+        "markdown" : {
+            "title" : "Web Design: Crafting Engaging Digital Experiences",
+            "descr" : "English"
+        }
     
 }
